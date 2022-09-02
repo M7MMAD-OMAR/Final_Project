@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/', function () {
+   return view('welcome');
+});
+
 Route::group(['middleware' => 'api'], function () {
         Route::get('/categories', [\App\Http\Controllers\Controller::class, 'index'])->name('index');
 });

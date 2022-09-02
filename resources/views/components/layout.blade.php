@@ -10,7 +10,7 @@
 <body>
 
     <div>Hi</div>
-
+    {{ $slot }}
 
 </body>
 </html>
