@@ -1,43 +1,12 @@
 <?php
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Http;
-// use Spatie\Browsershot\Browsershot;
-use App\Models\Order;
-use App\Models\PaymentOrder;
-use App\Models\User;
-
-// Route::get('/', [\App\Http\Controllers\Api\WelcomeController::class,'index']);
-
-
-Route::get('/', function () {
-
-    $order = PaymentOrder::first();
-    // return $order;
-     $user  = User::find(1);
-    // dd($orders);
-
-    // dd($orders->payment_client->first()->name_acount);
-
-    return view('dashboard_admin.invoice.order', compact('order', 'user'));
-
-    // Browsershot::url('https://example.com')->save('example.pdf');
-
-
-});
-
-
-Route::get('Api/Banner', function () {
-
-    $banners = App\Models\Banner::where('categoreys_id',1)->get();
-
-    return response()->api(App\Http\Resources\BannerResource::collection($banners));
-
-});
-
-Auth::routes();
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::get('/imei', [App\Http\Controllers\HomeController::class, 'imeiCheck'])->name('imei');
-Route::post('/imei', [App\Http\Controllers\HomeController::class, 'imeiSubmit']);
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/

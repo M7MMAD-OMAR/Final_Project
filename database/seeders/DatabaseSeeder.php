@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
+use Botble\Base\Supports\BaseSeeder;
 
-class DatabaseSeeder extends Seeder
+class DatabaseSeeder extends BaseSeeder
 {
     /**
      * Seed the application's database.
@@ -13,31 +13,32 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(AdminsTableSeeder::class);
-        $this->call(CategoreyTableSeeder::class);
-        $this->call(UserTableSeeder::class);
-        $this->call(PaymentAdminTableSeeder::class);
-        $this->call(ServiceCategoryTableSeeder::class);
-        $this->call(OwnerTableSeeder::class);
-        $this->call(ServiceTableSeeder::class);
-        $this->call(BookingTableSeeder::class);
-        $this->call(OrderStatusesTableSeeder::class);
-        $this->call(OrderTableSeeder::class);
-        $this->call(GalleryTableSeeder::class);
-        $this->call(PaymentClientTableSeeder::class);
+        $this->activateAllPlugins();
 
-        $this->call(OwnerTableSeederMove::class);
-        $this->call(OwnerTableSeederHotels::class);
-        $this->call(OwnerTableSeederHotelAppartment::class);
-        $this->call(OwnerTableSeederArtist::class);
-        $this->call(OwnerTableSeedCar::class);
-        $this->call(SuitTableSeeder::class);
-        $this->call(WomenHairdresserTableSeeder::class);
-        $this->call(OwnerTableSeederFarms::class);
-        $this->call(OwnerTableSeedConferenceRooms::class);
-        
-        $this->call(FavoredTableSeeder::class);
-        
-    }//end of run
+        $this->call(LanguageSeeder::class);
+        $this->call(CurrencySeeder::class);
+        $this->call(CategorySeeder::class);
+        $this->call(FacilitySeeder::class);
+        $this->call(FeatureSeeder::class);
+        $this->call(PackageSeeder::class);
+        $this->call(AccountSeeder::class);
+        $this->call(UserSeeder::class);
+        $this->call(SettingSeeder::class);
+        $this->call(PageSeeder::class);
+        $this->call(LatLongSeeder::class);
+        $this->call(MenuSeeder::class);
+        $this->call(ThemeOptionSeeder::class);
+        $this->call(BlogSeeder::class);
+        $this->call(CareerSeeder::class);
+        $this->call(ProjectSeeder::class);
+        $this->call(PropertySeeder::class);
+        $this->call(LocationSeeder::class);
 
-}//end of seede
+        $this->uploadFiles('banner');
+        $this->uploadFiles('cities');
+        $this->uploadFiles('logo');
+        $this->uploadFiles('projects');
+        $this->uploadFiles('properties');
+        $this->uploadFiles('users');
+    }
+}
