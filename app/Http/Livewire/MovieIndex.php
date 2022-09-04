@@ -67,7 +67,7 @@ class MovieIndex extends Component
             $this->dispatchBrowserEvent('banner-message', ['style' => 'danger', 'message' => 'Movie exists']);
             return;
         }
-        $url = 'https://api.themoviedb.org/3/movie/'. $this->tmdbId .'?api_key=8a11aac3fb4ef5f1f9607ee7e0329793&language=en-US';
+        $url = 'http://api.themoviedb.org/3/movie/'. $this->tmdbId .'?api_key=43d395118985f519a8036c48a693099c&language=en-US';
 
         $apiMovie = Http::get($url);
 

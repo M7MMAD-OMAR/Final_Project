@@ -42,12 +42,11 @@ class EpisodeIndex extends Component
 
     public function generateEpisode()
     {
-        $newEpisode = Http::get('https://api.themoviedb.org/3/tv/' . $this->serie->tmdb_id . '/season/' . $this->season->season_number .'/episode/'. $this->episodeNumber . '?api_key=8a11aac3fb4ef5f1f9607ee7e0329793&language=en-US
+        $newEpisode = Http::get('http://api.themoviedb.org/3/tv/' . $this->serie->tmdb_id . '/season/' . $this->season->season_number .'/episode/'. $this->episodeNumber . '?api_key=43d395118985f519a8036c48a693099c&language=en-US
                     ');
         if ($newEpisode->ok()) {
 
-            $episode = Episode::where('tmdb_id', $newEpisode['id'])->first();
-            if (!$episode) {
+            if (!Episode::where('tmdb_id', $newEpisode['id'])->first()) {
                 Episode::create([
                     'season_id' => $this->season->id,
                     'tmdb_id' => $newEpisode['id'],

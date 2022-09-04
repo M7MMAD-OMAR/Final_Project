@@ -28,11 +28,10 @@ class GenreIndex extends Component
 
     public function generateGenre()
     {
-        $newGenre = Http::get('https://api.themoviedb.org/3/genre/'. $this->tmdbId .'?api_key=8a11aac3fb4ef5f1f9607ee7e0329793&language=en-US
+        $newGenre = Http::get('http://api.themoviedb.org/3/genre/'. $this->tmdbId .'?api_key=43d395118985f519a8036c48a693099c&language=en-US
                         ')->json();
 
-        $genre = Genre::where('tmdb_id', $newGenre['id'])->first();
-        if (!$genre) {
+        if (!Genre::where('tmdb_id', $newGenre['id'])->first()) {
             Genre::create([
         'tmdb_id' => $newGenre['id'],
         'title'    => $newGenre['name'],
@@ -54,8 +53,7 @@ class GenreIndex extends Component
 
     public function loadGenre()
     {
-        $genre = Genre::findOrFail($this->genreId);
-        $this->title = $genre->title;
+        $this->title = Genre::findOrFail($this->genreId)->title;
     }
 
     public function updateGenre()
