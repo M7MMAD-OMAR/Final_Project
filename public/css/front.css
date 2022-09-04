@@ -337,14 +337,14 @@ samp {
  *    CSS Remedy, with `svg` added as well.
  *
  *    https://github.com/mozdevs/cssremedy/issues/14
- * 
+ *
  * 2. Add `vertical-align: middle` to align replaced elements more
  *    sensibly by default when overriding `display` by adding a
  *    utility like `inline`.
  *
  *    This can trigger a poorly considered linting error in some
  *    tools but is included by design.
- * 
+ *
  *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
  */img,
 svg,
@@ -383,22 +383,22 @@ video {
 	--tw-ring-offset-shadow: 0 0 #0000;
 	--tw-ring-shadow: 0 0 #0000;
 	--tw-shadow: 0 0 #0000;
-	--tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+	/*--tw-ring-inset: var(--tw-empty,!*!*! !*!*!);*/
 	--tw-ring-offset-width: 0px;
 	--tw-ring-offset-color: #fff;
 	--tw-ring-color: rgba(59, 130, 246, 0.5);
-	--tw-ring-offset-shadow: 0 0 #0000;
-	--tw-ring-shadow: 0 0 #0000;
-	--tw-shadow: 0 0 #0000;
-	--tw-blur: var(--tw-empty,/*!*/ /*!*/);
-	--tw-brightness: var(--tw-empty,/*!*/ /*!*/);
-	--tw-contrast: var(--tw-empty,/*!*/ /*!*/);
-	--tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
-	--tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
-	--tw-invert: var(--tw-empty,/*!*/ /*!*/);
-	--tw-saturate: var(--tw-empty,/*!*/ /*!*/);
-	--tw-sepia: var(--tw-empty,/*!*/ /*!*/);
-	--tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+	/*--tw-ring-offset-shadow: 0 0 #0000;*/
+	/*--tw-ring-shadow: 0 0 #0000;*/
+	/*--tw-shadow: 0 0 #0000;*/
+	/*--tw-blur: var(--tw-empty,!*!*! !*!*!);*/
+	/*--tw-brightness: var(--tw-empty,!*!*! !*!*!);*/
+	/*--tw-contrast: var(--tw-empty,!*!*! !*!*!);*/
+	/*--tw-grayscale: var(--tw-empty,!*!*! !*!*!);*/
+	/*--tw-hue-rotate: var(--tw-empty,!*!*! !*!*!);*/
+	/*--tw-invert: var(--tw-empty,!*!*! !*!*!);*/
+	/*--tw-saturate: var(--tw-empty,!*!*! !*!*!);*/
+	/*--tw-sepia: var(--tw-empty,!*!*! !*!*!);*/
+	/*--tw-drop-shadow: var(--tw-empty,!*!*! !*!*!);*/
 	--tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }[type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
 	-webkit-appearance: none;
@@ -407,7 +407,7 @@ video {
 	background-color: #fff;
 	border-color: #6b7280;
 	border-width: 1px;
-	border-radius: 0px;
+	border-radius: 0;
 	padding-top: 0.5rem;
 	padding-right: 0.75rem;
 	padding-bottom: 0.5rem;
@@ -418,7 +418,7 @@ video {
 }[type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus {
 	outline: 2px solid transparent;
 	outline-offset: 2px;
-	--tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+	/*--tw-ring-inset: var(--tw-empty,!*!*! !*!*!);*/
 	--tw-ring-offset-width: 0px;
 	--tw-ring-offset-color: #fff;
 	--tw-ring-color: #2563eb;
@@ -480,7 +480,7 @@ video {
 }[type='checkbox']:focus,[type='radio']:focus {
 	outline: 2px solid transparent;
 	outline-offset: 2px;
-	--tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+	/*--tw-ring-inset: var(--tw-empty,!*!*! !*!*!);*/
 	--tw-ring-offset-width: 2px;
 	--tw-ring-offset-color: #fff;
 	--tw-ring-color: #2563eb;
