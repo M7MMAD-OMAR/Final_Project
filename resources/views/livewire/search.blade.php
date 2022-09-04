@@ -6,7 +6,7 @@
                 stroke-linejoin="round"></path>
             <circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round"></circle>
-        </svg>Quick search...<span class="ml-auto pl-3 flex-none text-xs font-semibold">⌘K</span></button>
+        </svg>Quick search...<span class="ml-auto pl-3 flex-none text-xs font-semibold"></span></button>
     <x-jet-dialog-modal wire:model="showSearchModal">
         <x-slot name="title">Search Movies</x-slot>
         <x-slot name="content">
