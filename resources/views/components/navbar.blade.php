@@ -18,6 +18,8 @@
                 </svg>
             </button>
         </div>
+        <div>
+        </div>
         <nav :class="{'flex': open, 'hidden': !open}"
              class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
 
@@ -54,5 +56,11 @@
                 </div>
             </div>
         </nav>
+    </div>
+    <div>
+
+            <a href="/login" class="absolute bottom-0 left-0 p-3 bg-gray-800 text-white m-4 rounded-full">
+                Dashboard
+            </a>
     </div>
 </div>
