@@ -2,33 +2,22 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
 
 class Gallery extends Model
 {
-    use HasTranslations;
+    use HasFactory;
 
     protected $guarded = [];
 
-    public $translatable = ['title'];
+    protected $appends  = ['image_path'];
 
-    public function scopeWhenSearch($query , $search) 
+     //attributes----------------------------------
+    public function getImagePathAttribute()
     {
-        return $query->when($search, function ($q) use ($search) {
+        return asset('storage/' . $this->image);
 
-            return $q->where('title->ar' , 'like', "%$search%")
-            ->orWhere('title->en', 'like', "%$search%");
-        });
-
-    }//end ofscopeWhenSearch
-
-    protected $appends = ['gallery_path'];
-
-    public function getGalleryPathAttribute()
-    {
-        return asset('uploads/gallery_image/' . $this->image);
-
-    }//end of get image path
+    }//end of get image path   
 
 }//end of model

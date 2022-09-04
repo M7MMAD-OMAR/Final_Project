@@ -3,66 +3,54 @@
 namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laratrust\Traits\LaratrustUserTrait;
+use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use LaratrustUserTrait;
-    use Notifiable;
+    use HasApiTokens, HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name', 'email', 'password','image'
-    ];
+    protected $guarded  = [];
+    
+    protected $hidden   = ['password','remember_token'];
+    
+    protected $casts    = ['email_verified_at' => 'datetime'];
 
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'password', 'remember_token',
-    ];
+    protected $appends  = ['image_path','favoreds'];
 
-    /**
-     * The attributes that should be cast to native types.
-     *
-     * @var array
-     */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
-
-    protected $appends = ['image_path'];
-
+    //attributes----------------------------------
     public function getImagePathAttribute()
     {
-        return asset('uploads/user_images/' . $this->image);
+        return asset('storage/' . $this->image);
 
     }//end of get image path
 
+    public function getFavoredsAttribute()
+    {
+        return $this->favoreds();
 
+    }//end of fun
+
+    //scopes -------------------------------------
     public function scopeWhenSearch($query , $search) 
     {
         return $query->when($search, function ($q) use ($search) {
 
             return $q->where('name' , 'like', "%$search%")
-            ->orWhere('email', 'like', "%$search%");
-            // ->orWhere('phone', 'like', "%$search%");
+            ->orWhere('phone', 'like', "%$search%");
         });
         
-    }//end ofscopeWhenSearch`  
+    }//end o fscopeWhenSearch`
 
-    public function order()
+    //relations ----------------------------------
+
+
+    public function favoreds()
     {
-        return $this->belongsTo(Order::class,'user_id');
-        
-    }//end of belongsTo order
+        return $this->hasMany(Favored::class);
 
+    }//end of favoreds
+    
 }//end of model

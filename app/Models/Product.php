@@ -2,65 +2,41 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
-use AmrShawky\LaravelCurrency\Facade\Currency;
 
 class Product extends Model
 {
-    use HasTranslations;
+    use HasFactory;
 
     protected $guarded = [];
-    
-    public $translatable = ['name','description'];
 
-    public function scopeWhenSearch($query , $search , $request) 
+    protected $appends  = ['image_path','tages'];
+
+     //relationshep----------------------------------
+    public function images()
     {
-        // dd($query);
-        return $query->when($search, function ($q) use ($search) {
+        return $this->hasMany(ProductImage::class);
 
-            return $q->where('name->ar' , 'like', "%$search%")
-            ->orWhere('name->en', 'like', "%$search%")
-            ->orWhere('description->ar', 'like', "%$search%")
-            ->orWhere('description->en', 'like', "%$search%");
-            
-        })->when($request->category_id,function($q) use ($request) {
+    }//end if hasMany imaged
 
-            return $q->where('category_id',$request->category_id);
-
-        });
-        
-    }//end of scopeWhenSearch
-
-    public function category()
+    public function tages()
     {
-        return $this->belongsTo(Categorey::class,'category_id');
-    }//end of belongsTo category
+        return $this->hasMany(Tage::class);
 
-    protected $appends = ['image_path','exchange_rate'];
+    }//end if hasMany imaged
 
+     //attributes----------------------------------
     public function getImagePathAttribute()
     {
-        return asset('uploads/product_image/' . $this->image);
+        return asset('storage/' . $this->image);
 
     }//end of get image path
 
-    public function purchase()
+    public function getTagesAttribute()
     {
-        return $this->hasMany(Purchase::class, 'product_id');
+        return Tage::where('product_id',$this->id)->get();
 
-    }//end of hasMany purchase
-
-    public function getExchangeRateAttribute()
-    {
-
-        return $this->price * Currenc::latest()->first()->sdg;
-        // return Currency::convert()
-        //     ->from('USD')
-        //     ->to('SDG')
-        //     ->amount($this->price)
-        //     ->get();
-
-    }//end of get exchange rate attribute
+    }//end of get image path
 
 }//end of model

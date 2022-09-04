@@ -31,7 +31,7 @@ return [
     |
     */
 
-    'lifetime' => env('SESSION_LIFETIME', 3000),
+    'lifetime' => env('SESSION_LIFETIME', 1 * (60 * 24 * 365)),
 
     'expire_on_close' => false,
 
@@ -164,7 +164,7 @@ return [
     |
     | By setting this option to true, session cookies will only be sent back
     | to the server if the browser has a HTTPS connection. This will keep
-    | the cookie from being sent to you if it can not be done securely.
+    | the cookie from being sent to you when it can't be done securely.
     |
     */
 

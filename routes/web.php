@@ -1,82 +1,43 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use AmrShawky\LaravelCurrency\Facade\Currency;
+use Illuminate\Support\Facades\Http;
+// use Spatie\Browsershot\Browsershot;
+use App\Models\Order;
+use App\Models\PaymentOrder;
+use App\Models\User;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-
-*/
-
-Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath']],
-function () {
+// Route::get('/', [\App\Http\Controllers\Api\WelcomeController::class,'index']);
 
 
-    //home route
-    Route::get('/', 'WelcomController@index')->name('/');
+Route::get('/', function () {
 
-    //profile rout
-    Route::get('/profile/{id}', 'UserrController@profile')->name('profile')->middleware('auth');
-    Route::put('/update_prfile/{id}', 'UserrController@update_prfile')->name('update_prfile')->middleware('auth');
-    Route::post('store.connect', 'UserrController@connect')->name('store.connect');
+    return $order = PaymentOrder::first();
+    // return $order;
+    // $user  = User::find($order->user_id);
+    // dd($orders);
 
-    //profile rout
-    Route::get('/category/{id}', 'WelcomController@category_show')->name('category.show');
-    Route::get('/shop', 'WelcomController@shop')->name('shop.show');
-    Route::get('autocomplete', 'WelcomController@autocomplete')->name('autocomplete');
-    Route::get('all_category', 'WelcomController@all_category')->name('all_category');
+    // dd($orders->payment_client->first()->name_acount);
 
-    //profile rout
-    Route::get('/show/{product}', 'ProductController@show')->name('show');
-    Route::get('/cart', 'ProductController@index')->name('wallet.index');
-    Route::post('/wallet/{product}', 'ProductController@add_card')->name('wallet.store');
-    Route::put('/wallet/{id}', 'ProductController@update')->name('wallet.update');
-    Route::delete('/wallet/{id}', 'ProductController@destroy')->name('wallet.delete');
+    return view('dashboard_admin.invoice.order', compact('order', 'user'));
 
-    //Payment rout
-    Route::post('/create_order', 'OrderController@create_order')->name('create.order')->middleware('auth');
-    Route::get('/Payment', 'OrderController@index')->name('orders.index')->middleware('auth');
+    // Browsershot::url('https://example.com')->save('example.pdf');
 
-   //Purchase rout
-    Route::get('/my_purchase', 'PurchaseController@my_purchase')->name('purchase.index')->middleware('auth');
-    Route::get('/purchase/{id}', 'PurchaseController@purchase_show')->name('purchase.show')->middleware('auth');
-    // Route::get('/purchase_edit/{id}', 'PurchaseController@purchase_edit')->name('purchase.edit')->middleware('auth');
+ 
+});
 
-    //login rout
-    Route::get('login/{provider}', 'LoginController@redirectToProvider')->name('auth.provider')->where('provider', 'facebook|google');
-    Route::get('login/{provider}/callback', 'LoginController@handleProviderCallback')->where('provider', 'facebook|google');
 
-    //coupon. rout
-    Route::post('coupon.store', 'CouponController@store')->name('coupon.store');
-    Route::delete('coupon.delete', 'CouponController@destroy')->name('coupon.delete');
+Route::get('Api/Banner', function () {
 
-    Auth::routes();
+    $banners = App\Models\Banner::where('categoreys_id',1)->get();
 
-    Route::get('/clear', function() {
+    return response()->api(App\Http\Resources\BannerResource::collection($banners));
 
-       Artisan::call('cache:clear');
-       Artisan::call('config:clear');
-       Artisan::call('config:cache');
-       Artisan::call('view:clear');
-       Artisan::call('view:cache');
+});
 
-       return "Cleared!";
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-    });
-
-    Route::get('/aa', function() {
-      
-      return view('welcome');
-
-    });
-
-    Route::post('aa', 'WelcomController@aa')->name('aa');
-
-});//LaravelLocalization
+Route::get('/imei', [App\Http\Controllers\HomeController::class, 'imeiCheck'])->name('imei');
+Route::post('/imei', [App\Http\Controllers\HomeController::class, 'imeiSubmit']);

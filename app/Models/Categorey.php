@@ -2,30 +2,34 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Translatable\HasTranslations;
 
 class Categorey extends Model
 {
-    use HasTranslations;
+    use HasFactory;
 
     protected $guarded = [];
-    
-    public $translatable = ['name'];
 
-    public function scopeWhenSearch($query , $search) 
+    protected $appends  = ['logo_path','category_id'];
+
+     //attributes----------------------------------
+    public function getLogoPathAttribute()
     {
-        return $query->when($search, function ($q) use ($search) {
+        return asset('storage/' . $this->logo);
 
-            return $q->where('name->ar' , 'like', "%$search%")
-            ->orWhere('name->en', 'like', "%$search%");
-            
-        });
-    }//end ofscopeWhenSearch
+    }//end of get logo path
 
-    public function proudut()
+    public function getCategoryIdAttribute()
     {
-        return $this->hasMany(Product::class,'category_id');
-    }//end of belongsTo category
-    
+        return $this->id;
+
+    }//end of get logo path
+
+    public function favoreds()
+    {
+        return $this->hasMany(Favored::class);
+
+    }//end of 
+
 }//end of model
