@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="change files">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/CastIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/CastIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/EpisodeIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/EpisodeIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/GenreIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/GenreIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/MovieIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/MovieIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SeasonIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SeasonIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SerieIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SerieIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/TagIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/TagIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/front.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/front.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="add files and last change">
+      <change afterPath="$PROJECT_DIR$/movie_app.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,6 +199,7 @@
       <recent name="R:\Programme\laravel9\Final_Project\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="R:\Programme\laravel9\Final_Project" />
       <recent name="R:\Programme\laravel9\Final_Project\public" />
       <recent name="R:\Programme\laravel9\Final_Project\public\image" />
     </key>
@@ -233,7 +219,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662291749224</updated>
       <workItem from="1662291751830" duration="6164000" />
-      <workItem from="1662318435884" duration="6241000" />
+      <workItem from="1662318435884" duration="6613000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -312,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662318563417</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add files and last change">
+      <created>1662326910252</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662326910252</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +335,7 @@
     <MESSAGE value="last change" />
     <MESSAGE value="last change be go to gym" />
     <MESSAGE value="change files" />
-    <option name="LAST_COMMIT_MESSAGE" value="change files" />
+    <MESSAGE value="add files and last change" />
+    <option name="LAST_COMMIT_MESSAGE" value="add files and last change" />
   </component>
 </project>
