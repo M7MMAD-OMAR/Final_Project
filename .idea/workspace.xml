@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="new App movice">
-      <change beforePath="$PROJECT_DIR$/.idea/Final_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Final_Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
-    </list>
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="edit file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,20 +147,33 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2EIn1Om1WskOWGwvpANRFzuPRp0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "R:/Programme/laravel9/Final_Project",
+    "last_opened_file_path": "R:/Programme/laravel9/Final_Project/public",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="R:\Programme\laravel9\Final_Project\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="R:\Programme\laravel9\Final_Project\public" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
       <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
@@ -182,7 +192,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662291749224</updated>
-      <workItem from="1662291751830" duration="747000" />
+      <workItem from="1662291751830" duration="1070000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -198,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662291874980</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add favicon.ico">
+      <created>1662293368285</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662293368285</updated>
+    </task>
+    <task id="LOCAL-00004" summary="edit file">
+      <created>1662293376053</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662293376053</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +241,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new App movice" />
-    <option name="LAST_COMMIT_MESSAGE" value="new App movice" />
+    <MESSAGE value="add favicon.ico" />
+    <MESSAGE value="edit file" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit file" />
   </component>
 </project>
