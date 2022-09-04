@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+@extends('layouts.app')
+
+    <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" />

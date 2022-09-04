@@ -13,9 +13,9 @@ use App\Models\User;
 
 Route::get('/', function () {
 
-    return $order = PaymentOrder::first();
+    $order = PaymentOrder::first();
     // return $order;
-    // $user  = User::find($order->user_id);
+     $user  = User::find(1);
     // dd($orders);
 
     // dd($orders->payment_client->first()->name_acount);
@@ -24,7 +24,7 @@ Route::get('/', function () {
 
     // Browsershot::url('https://example.com')->save('example.pdf');
 
- 
+
 });
 
 
