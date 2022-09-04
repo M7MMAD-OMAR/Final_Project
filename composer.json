@@ -5,39 +5,21 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0|^8.1",
-        "ext-curl": "*",
-        "ext-gd": "*",
-        "ext-json": "*",
-        "ext-zip": "*",
-        "botble/api": "*@dev",
-        "botble/menu": "*@dev",
-        "botble/optimize": "*@dev",
-        "botble/page": "*@dev",
-        "botble/platform": "*@dev",
-        "botble/plugin-management": "*@dev",
-        "botble/revision": "*@dev",
-        "botble/seo-helper": "*@dev",
-        "botble/shortcode": "*@dev",
-        "botble/sitemap": "*@dev",
-        "botble/slug": "*@dev",
-        "botble/theme": "*@dev",
-        "botble/widget": "*@dev",
-        "doctrine/dbal": "^3.2",
-        "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^2.1",
-        "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^8.62",
+        "php": "^7.3|^8.0",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "kyslik/column-sortable": "^6.4",
+        "laravel/framework": "^8.65",
+        "laravel/jetstream": "^2.4",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "league/flysystem-aws-s3-v3": "^1.0",
-        "predis/predis": "^2.0",
-        "wikimedia/composer-merge-plugin": "^2.0"
+        "livewire/livewire": "^2.5",
+        "spatie/laravel-permission": "^5.3",
+        "spatie/laravel-searchable": "^1.10",
+        "usernotnull/tall-toasts": "^1.2"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.7",
-        "barryvdh/laravel-ide-helper": "^2.12",
-        "facade/ignition": "^2.14",
+        "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
@@ -62,9 +44,7 @@
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
-            "Google\\Task\\Composer::cleanup",
-            "@php artisan cms:publish:assets"
+            "@php artisan vendor:publish --tag=laravel-assets --ansi"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
@@ -76,44 +56,14 @@
     "extra": {
         "laravel": {
             "dont-discover": []
-        },
-        "merge-plugin": {
-            "include": [
-                "./platform/plugins/*/composer.json",
-                "./platform/themes/*/composer.json"
-            ],
-            "recurse": false,
-            "replace": false,
-            "ignore-duplicates": false,
-            "merge-dev": false,
-            "merge-extra": false,
-            "merge-extra-deep": false,
-            "merge-scripts": false
-        },
-        "google/apiclient-services": [
-            "Analytics"
-        ]
+        }
     },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true,
-        "allow-plugins": {
-            "composer/package-versions-deprecated": true,
-            "pestphp/pest-plugin": true,
-            "wikimedia/composer-merge-plugin": true
-        }
+        "disable-tls": false
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "./platform/core"
-        },
-        {
-            "type": "path",
-            "url": "./platform/packages/*"
-        }
-    ]
+    "prefer-stable": true
 }
