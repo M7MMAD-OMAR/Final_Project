@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="edit file" />
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="edit file">
+      <change afterPath="$PROJECT_DIR$/public/image/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/admin-welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/admin-welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/footer.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,6 +176,7 @@
       <recent name="R:\Programme\laravel9\Final_Project\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="R:\Programme\laravel9\Final_Project\public\image" />
       <recent name="R:\Programme\laravel9\Final_Project\public" />
     </key>
   </component>
@@ -192,7 +198,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662291749224</updated>
-      <workItem from="1662291751830" duration="1070000" />
+      <workItem from="1662291751830" duration="2738000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -222,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662293376053</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="edit file">
+      <created>1662294168667</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662294168667</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
