@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Movie Gallery') }}</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -36,7 +36,9 @@
                 </header>
             @endif
             <!-- Page Content -->
+
             <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
+
                 <div class="container mx-auto px-6 py-8">
                     {{ $slot }}
                 </div>

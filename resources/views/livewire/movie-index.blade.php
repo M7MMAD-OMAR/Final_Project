@@ -1,4 +1,7 @@
 <section class="container mx-auto p-6 font-mono">
+    <div class="container mx-auto px-8 py-8">
+
+    </div>
     <div class="w-full flex mb-4 p-2 justify-end">
         <form class="flex space-x-4 shadow bg-white rounded-md m-2 p-2">
             <div class="p-1 flex items-center">
