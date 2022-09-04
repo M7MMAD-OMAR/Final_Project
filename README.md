@@ -1,16 +1,53 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<a href="https://laravel.com" target="_blank">
+<img src="public/image/logo.png" width="50"></a></p>
 
-### Look this
 
-Use DataBase sql and Import file  <b> "movie_app.sql" </b>
+
+# Movie Gallery
+
+Use DataBase MySQL and Import file  <b> "movie_app.sql" </b> from project file
 
 <hr>
+<br>
+
+#### I Used
+<hr>
+
+    * Laravel
+    * Vue
+    * Livewire
+    * MySQL
+    * Api
+    * Tailwind CSS
+    * NodeJS
+    * And Other Library...
+
+
+
+<p>
+<h4>Admin view</h4>
+<a href="https://laravel.com" target="_blank">
+<img src="public/image/readme/new1.png" width="95%"></a>
+</p>
+
+<hr>
+<br>
+
+<p>
+<h4>Admin Details view</h4>
+<a href="https://laravel.com" target="_blank">
+<img src="public/image/readme/new2.png" width="95%"></a>
+</p>
+
+<hr>
+<br>
+
+<p>
+<h4>User page</h4>
+<a href="https://laravel.com" target="_blank">
+<img src="public/image/readme/new3.png" width="95%"></a>
+</p>
+
 
 And Thank you!

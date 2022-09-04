@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="add files and last change">
-      <change afterPath="$PROJECT_DIR$/movie_app.sql" afterDir="false" />
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="change README.md file and add sql file">
+      <change afterPath="$PROJECT_DIR$/public/image/readme/new1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/readme/new2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/readme/new3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,21 +183,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;R:/Programme/laravel9/Final_Project/public/image&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "R:/Programme/laravel9/Final_Project/public/image/readme",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="R:\Programme\laravel9\Final_Project\public\image\readme" />
       <recent name="R:\Programme\laravel9\Final_Project\public\image" />
       <recent name="R:\Programme\laravel9\Final_Project\public" />
     </key>
@@ -219,7 +223,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662291749224</updated>
       <workItem from="1662291751830" duration="6164000" />
-      <workItem from="1662318435884" duration="6613000" />
+      <workItem from="1662318435884" duration="6654000" />
+      <workItem from="1662329912712" duration="811000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -305,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662326910252</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="change README.md file and add sql file">
+      <created>1662327193980</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662327193980</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,6 +348,7 @@
     <MESSAGE value="last change be go to gym" />
     <MESSAGE value="change files" />
     <MESSAGE value="add files and last change" />
-    <option name="LAST_COMMIT_MESSAGE" value="add files and last change" />
+    <MESSAGE value="change README.md file and add sql file" />
+    <option name="LAST_COMMIT_MESSAGE" value="change README.md file and add sql file" />
   </component>
 </project>
