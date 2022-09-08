@@ -58,9 +58,13 @@
                             @if (!empty($latests))
                                 @foreach ($latests as $lserie)
                                     <a href="{{ route('series.show', $lserie->slug) }}">
-                                        <img class="w-full h-full rounded-lg"
-                                            src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $lserie->poster_path }}">
-
+                                        @if($lserie->tmdb_id === null)
+                                            <img src="{{ asset('image/'.$lserie->poster_path) }}" alt="image"
+                                                 class="w-full h-full rounded-lg">
+                                        @else
+                                            <img class="w-full h-full rounded-lg" alt="image"
+                                                 src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $lserie->poster_path }}">
+                                        @endif
                                     </a>
                                 @endforeach
                             @endif
