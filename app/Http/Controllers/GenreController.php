@@ -13,4 +13,8 @@ class GenreController extends Controller
 
         return view('genres.show', compact('movies', 'genre'));
     }
+
+    public function store(Request $request) {
+        
+    }
 }

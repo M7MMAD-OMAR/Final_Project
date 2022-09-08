@@ -42,5 +42,7 @@ class MovieController extends Controller
             'poster_path' => $request->file('poster_path')->storeAs('photos_movies',$poster_name ,'photo_movie'),
             'backdrop_path' => $request->file('backdrop_path')->storeAs('photos_movies',$backdrop_name ,'photo_movie'),
         ]);
+        $movies->save();
+        return back()->with('success', 'Ok it\'s saved');
     }
 }

@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="create series form">
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="add image">
+      <change afterPath="$PROJECT_DIR$/public/image/photos_movies/laravel_new.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SerieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SerieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serie-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serie-index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +229,7 @@
       <workItem from="1662329912712" duration="1581000" />
       <workItem from="1662364671922" duration="91000" />
       <workItem from="1662449380546" duration="32000" />
-      <workItem from="1662643503141" duration="12096000" />
+      <workItem from="1662643503141" duration="12829000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -407,7 +413,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662671043718</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="create series form">
+      <created>1662671578117</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1662671578117</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add image">
+      <created>1662671586278</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1662671586278</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,6 +465,7 @@
     <MESSAGE value="change form in movies and fix form" />
     <MESSAGE value="fix form photo" />
     <MESSAGE value="create series form" />
-    <option name="LAST_COMMIT_MESSAGE" value="create series form" />
+    <MESSAGE value="add image" />
+    <option name="LAST_COMMIT_MESSAGE" value="add image" />
   </component>
 </project>

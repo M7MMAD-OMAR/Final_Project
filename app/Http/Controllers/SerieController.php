@@ -37,13 +37,15 @@ class SerieController extends Controller
 
     public function store(Request $request) {
         $image_name = $request->file('poster_path')->getClientOriginalName();
-        Serie::create([
+        $series = Serie::create([
 //            'tmdb_id' => $request['id'],
             'name'    => $request['name'],
             'slug'    => Str::slug($request['name']),
             'created_year' => $request['first_air_date'],
             'poster_path'  => $request->file('poster_path')->storeAs('photos_movies',$image_name ,'photo_movie'),
         ]);
+        $series->save();
+        return back()->with('success', 'Ok it\'s saved');
     }
 
 }

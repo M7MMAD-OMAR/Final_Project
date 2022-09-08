@@ -74,9 +74,9 @@
                     <textarea id="overview" name="overview" required
                               class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                 </div>
-                    <input type="submit" value="Submit"
-                           class="text-white cursor-pointer bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
-                    <p class="text-xs text-gray-500 mt-3"></p>
+                <input type="submit" value="Submit"
+                       class="text-white cursor-pointer bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                <p class="text-xs text-gray-500 mt-3"></p>
             </form>
         </section>
     </div>
@@ -128,12 +128,14 @@
                         </div>
                     </div>
                     <div class="flex">
-                        <select wire:model="perPage"
-                                class="px-4 py-3 w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
-                            <option value="5">5 Per Page</option>
-                            <option value="10">10 Per Page</option>
-                            <option value="15">15 Per Page</option>
-                        </select>
+                        <label>
+                            <select wire:model="perPage"
+                                    class="px-4 py-3 w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm">
+                                <option value="5">5 Per Page</option>
+                                <option value="10">10 Per Page</option>
+                                <option value="15">15 Per Page</option>
+                            </select>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -238,8 +240,8 @@
                                 <img src="{{ asset('image/'.$table_movie->poster_path) }}" alt=""
                                      class="h-12 w-12 rounded">
                             @else
-                            <img class="h-12 w-12 rounded"
-                                 src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $table_movie->poster_path }}">
+                                <img class="h-12 w-12 rounded"
+                                     src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $table_movie->poster_path }}">
                             @endif
                         </td>
 

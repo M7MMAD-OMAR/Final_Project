@@ -1,5 +1,5 @@
 <section class="container mx-auto p-6 font-mono">
-    <form action="{{ route('admin.movie.store') }}" enctype="multipart/form-data" method="POST">
+    <form action="{{ route('admin.serie.store') }}" enctype="multipart/form-data" method="POST">
         @csrf
         <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Create Series</h2>
         <p class="leading-relaxed mb-5 text-gray-600"></p>
