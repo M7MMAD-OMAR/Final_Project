@@ -5,6 +5,7 @@ use App\Http\Controllers\CastController;
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\SerieController;
+use App\Http\Controllers\TagController;
 use App\Http\Controllers\WelcomeController;
 use App\Http\Livewire\CastIndex;
 use App\Http\Livewire\EpisodeIndex;
@@ -40,8 +41,8 @@ Route::middleware(['auth:sanctum', 'verified', 'role:admin'])->prefix('admin')->
     Route::get('casts', CastIndex::class)->name('casts.index');
     Route::post('casts', [CastController::class, 'store'])->name('cast.store');
     Route::get('tags', TagIndex::class)->name('tags.index');
-}); Route::post('tags', [TagController::class, 'store'])->name('tag.store');
-
+    Route::post('tags', [TagController::class, 'store'])->name('tags.store');
+});
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
