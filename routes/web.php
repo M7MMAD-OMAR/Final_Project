@@ -32,6 +32,7 @@ Route::middleware(['auth:sanctum', 'verified', 'role:admin'])->prefix('admin')->
     Route::get('movies', MovieIndex::class)->name('movies.index');
     Route::post('movies', [MovieController::class, 'store'])->name('movie.store');
     Route::get('series', SerieIndex::class)->name('series.index');
+    Route::post('series', [SerieController::class, 'store'])->name('serie.store');
     Route::get('series/{serie}/seasons', SeasonIndex::class)->name('seasons.index');
     Route::get('series/{serie}/seasons/{season}/episodes', EpisodeIndex::class)->name('episodes.index');
     Route::get('genres', GenreIndex::class)->name('genres.index');

@@ -6,6 +6,7 @@ use App\Models\Episode;
 use App\Models\Season;
 use App\Models\Serie;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class SerieController extends Controller
 {
@@ -33,4 +34,15 @@ class SerieController extends Controller
         $latests = Episode::orderBy('created_at', 'desc')->take(9)->get();
         return view('episodes.show', compact('episode'));
     }
+
+    public function store(Request $request) {
+        Serie::create([
+//            'tmdb_id' => $request['id'],
+            'name'    => $request['name'],
+            'slug'    => Str::slug($request['name']),
+            'created_year' => $request['first_air_date'],
+            'poster_path'  => $request['poster_path']
+        ]);
+    }
+
 }

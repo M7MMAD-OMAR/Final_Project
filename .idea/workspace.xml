@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="change form in movies and fix form">
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="fix form photo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SerieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SerieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/SerieIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/SerieIndex.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_11_01_205834_create_movies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_11_01_205834_create_movies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_11_01_205856_create_series_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_11_01_205856_create_series_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serie-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serie-index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +229,7 @@
       <workItem from="1662329912712" duration="1581000" />
       <workItem from="1662364671922" duration="91000" />
       <workItem from="1662449380546" duration="32000" />
-      <workItem from="1662643503141" duration="9015000" />
+      <workItem from="1662643503141" duration="10487000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -367,7 +371,28 @@
       <option name="project" value="LOCAL" />
       <updated>1662651285477</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="change form in movies and fix form">
+      <created>1662668096627</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1662668096627</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fix form photo">
+      <created>1662668108501</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662668108501</updated>
+    </task>
+    <task id="LOCAL-00023" summary="fix form photo">
+      <created>1662668476391</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1662668476391</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,6 +428,7 @@
     <MESSAGE value="change file" />
     <MESSAGE value="change form in movies" />
     <MESSAGE value="change form in movies and fix form" />
-    <option name="LAST_COMMIT_MESSAGE" value="change form in movies and fix form" />
+    <MESSAGE value="fix form photo" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix form photo" />
   </component>
 </project>

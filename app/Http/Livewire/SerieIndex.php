@@ -13,6 +13,7 @@ class SerieIndex extends Component
     use WithPagination;
 
     public $search = '';
+    protected $queryString = ['search' => ['except' => '']];
     public $sort = 'asc';
     public $perPage = 5;
 
