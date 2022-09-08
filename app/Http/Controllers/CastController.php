@@ -23,7 +23,7 @@ class CastController extends Controller
     public function store(Request $request)
     {
         $image_name = $request->file('poster_path')->getClientOriginalName();
-        Cast::create([
+        $cast = Cast::create([
 //            'tmdb_id' => $newCast['id'],
             'name' => $request['name'],
             'slug' => Str::slug($request['name']),
