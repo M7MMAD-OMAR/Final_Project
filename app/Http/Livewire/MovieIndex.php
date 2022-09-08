@@ -62,8 +62,7 @@ class MovieIndex extends Component
 
     public function generateMovie()
     {
-        $movie = Movie::where('tmdb_id', $this->tmdbId)->exists();
-        if ($movie) {
+        if (Movie::where('tmdb_id', $this->tmdbId)->exists()) {
             $this->dispatchBrowserEvent('banner-message', ['style' => 'danger', 'message' => 'Movie exists']);
             return;
         }

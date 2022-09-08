@@ -39,6 +39,10 @@ class Movie extends Model implements Searchable
         );
     }
 
+    public function store(Request $request) {
+
+    }
+
     public function genres()
     {
         return $this->belongsToMany(Genre::class, 'genre_movie');

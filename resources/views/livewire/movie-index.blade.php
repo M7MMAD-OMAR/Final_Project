@@ -2,22 +2,48 @@
 
     <div class="">
         <section class="text-gray-600 body-font relative container mx-auto px-8 py-8 rounded-xl">
-            <form action="">
+            <form action="{{ route('admin.movie.store') }}" method="POST">
+                @csrf
                     <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Create Movies</h2>
                     <p class="leading-relaxed mb-5 text-gray-600"></p>
                     <div class="relative mb-4">
-                        <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-                        <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        <label for="title" class="leading-7 text-sm text-gray-600">Title</label>
+                        <input type="text" id="title" name="title" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
                     <div class="relative mb-4">
-                        <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-                        <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        <label for="slug" class="leading-7 text-sm text-gray-600">Slug</label>
+                        <input type="text" id="slug" name="slug" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
+
+                <div class="relative mb-4">
+                    <label for="runtime" class="leading-7 text-sm text-gray-600">Run Time</label>
+                    <input type="time" id="runtime" name="runtime" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+
+                <div class="relative mb-4">
+                    <label for="rating" class="leading-7 text-sm text-gray-600">Rating</label>
+                    <input type="number" id="rating" name="rating" min="0" max="8" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+
+                <div class="relative mb-4">
+                    <label for="release_date" class="leading-7 text-sm text-gray-600">Release Date</label>
+                    <input type="date" id="release_date" name="release_date" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+
+                <div class="relative mb-4">
+                    <label for="lang" class="leading-7 text-sm text-gray-600">Lang</label>
+                    <input type="text" id="lang" name="lang" max="2" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+
+                <div class="relative mb-4">
+                    <label for="is_public" class="leading-7 text-sm text-gray-600">Public</label>
+                    <input type="number" id="is_public" name="is_public" min="0" max="1" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
                     <div class="relative mb-4">
                         <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                        <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        <textarea id="message" name="message" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                     </div>
-                    <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button>
+                    <input type="submit" value="Submit" class="text-white cursor-pointer bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
                     <p class="text-xs text-gray-500 mt-3"></p>
             </form>
         </section>

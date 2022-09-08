@@ -30,7 +30,7 @@ Route::get('/genre/{genre:slug}', [GenreController::class, 'show'])->name('genre
 Route::middleware(['auth:sanctum', 'verified', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/', [AdminController::class, 'index'])->name('index');
     Route::get('movies', MovieIndex::class)->name('movies.index');
-    Route::post('movies', [\App\Models\Movie::class, 'store'])->name('movie.store');
+    Route::post('movies', [MovieController::class, 'store'])->name('movie.store');
     Route::get('series', SerieIndex::class)->name('series.index');
     Route::get('series/{serie}/seasons', SeasonIndex::class)->name('seasons.index');
     Route::get('series/{serie}/seasons/{season}/episodes', EpisodeIndex::class)->name('episodes.index');
