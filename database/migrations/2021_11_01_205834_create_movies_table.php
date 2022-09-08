@@ -15,7 +15,7 @@ class CreateMoviesTable extends Migration
     {
         Schema::create('movies', function (Blueprint $table) {
             $table->id();
-            $table->string('tmdb_id')->unique();
+            $table->string('tmdb_id')->unique()->nullable();
             $table->string('title');
             $table->date('release_date');
             $table->string('runtime');
