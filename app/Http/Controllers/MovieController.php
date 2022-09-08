@@ -23,6 +23,7 @@ class MovieController extends Controller
      * @throws \Exception
      */
     public function store(Request $request) {
+        $temp = $request->file('poster_path')::store('photos_movies', 'photo_movie');
         $movies = Movie::create([
 //            'tmdb_id' => random_int(0, 10000),
             'title' => $request['title'],
@@ -35,7 +36,7 @@ class MovieController extends Controller
             'is_public' => $request['is_public'],
             'overview' => $request['overview'],
             'visits' => $request['visits'],
-            'poster_path' => $request['poster_path'],
+            'poster_path' => $temp,
             'backdrop_path' => $request['backdrop_path']
         ]);
         $movies->save();
