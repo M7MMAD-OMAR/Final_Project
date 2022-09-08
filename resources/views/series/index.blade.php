@@ -7,8 +7,13 @@
                         <x-slot name="image">
                             <a href="{{ route('series.show', $serie->slug) }}">
                                 <div class="aspect-w-2 aspect-h-3">
-                                    <img class="object-cover"
-                                        src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $serie->poster_path }}">
+                                    @if($serie->tmdb_id === null)
+                                        <img src="{{ asset('image/'.$serie->poster_path) }}" alt="image"
+                                             class="object-cover">
+                                    @else
+                                        <img class="object-cover"
+                                             src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $serie->poster_path }}">
+                                    @endif
                                 </div>
                                 <div class="absolute inset-0 z-10 bg-gradient-to-t from-black to-transparent"></div>
 
