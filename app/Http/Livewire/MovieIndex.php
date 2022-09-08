@@ -15,6 +15,7 @@ class MovieIndex extends Component
     use WithPagination;
 
     public $search = '';
+    protected $queryString = ['search' => ['except' => '']];
     public $sortColumn = 'title';
     public $sortDirection = 'asc';
     public $perPage = 5;
