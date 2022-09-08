@@ -10,8 +10,13 @@
                         <x-slot name="image">
                             <a href="{{ route('movies.show', $movie->slug) }}">
                                 <div class="aspect-w-2 aspect-h-3">
-                                    <img class="object-cover"
-                                        src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $movie->poster_path }}">
+                                    @if($movie->tmdb_id === null)
+                                        <img src="{{ asset('image/'.$movie->poster_path) }}" alt=""
+                                             class="object-cover">
+                                    @else
+                                        <img class="object-cover"
+                                             src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $movie->poster_path }}">
+                                    @endif
                                 </div>
                                 <div
                                     class="absolute x-10 left-2 top-2 h-6 w-12 bg-gray-800 group-hover:bg-gray-700 text-blue-400 text-center rounded">

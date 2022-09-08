@@ -6,8 +6,13 @@
                     <div class="flex">
                         <div class="w-3/12">
                             <div class="w-full">
-                                <img class="w-full h-full rounded"
-                                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $serie->poster_path }}">
+                                @if($serie->tmdb_id === null)
+                                    <img src="{{ asset('image/'.$serie->poster_path) }}" alt="image"
+                                         class="w-full h-full rounded">
+                                @else
+                                    <img  class="w-full h-full rounded" alt="image"
+                                         src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $serie->poster_path }}">
+                                @endif
                             </div>
                         </div>
                         <div class="w-8/12">
@@ -33,8 +38,13 @@
                                 <x-movie-card>
                                     <a href="{{ route('season.show', [$serie->slug, $season->slug]) }}">
                                         <x-slot name="image">
-                                            <img class=""
-                                                src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $season->poster_path }}">
+                                            @if($season->tmdb_id === null)
+                                                <img src="{{ asset('image/'.$season->poster_path) }}" alt="image"
+                                                     class="">
+                                            @else
+                                                <img class=""
+                                                     src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $season->poster_path }}">
+                                            @endif
                                         </x-slot>
                                         <span class="text-white">{{ $season->name }}</span>
                                     </a>
@@ -50,6 +60,7 @@
                                     <a href="{{ route('series.show', $lserie->slug) }}">
                                         <img class="w-full h-full rounded-lg"
                                             src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $lserie->poster_path }}">
+
                                     </a>
                                 @endforeach
                             @endif

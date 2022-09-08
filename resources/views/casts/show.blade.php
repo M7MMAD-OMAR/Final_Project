@@ -6,8 +6,13 @@
                     <div class="flex">
                         <div class="w-3/12">
                             <div class="w-full">
-                                <img class="w-full h-full rounded"
-                                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $cast->poster_path }}">
+                                @if($cast->tmdb_id === null)
+                                    <img src="{{ asset('image/'.$cast->poster_path) }}" alt="image"
+                                         class="w-full h-full rounded" >
+                                @else
+                                    <img class="w-full h-full rounded" alt="image"
+                                         src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $cast->poster_path }}">
+                                @endif
                             </div>
                         </div>
                         <div class="w-8/12">
@@ -29,8 +34,12 @@
                                 <x-movie-card>
                                     <x-slot name="image">
                                         <a href="{{ route('movies.show', $movie->slug) }}">
-                                            <img class=""
-                                                src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $movie->poster_path }}">
+                                           @if($movie->tmdb_id === null)
+                                                <img src="{{ asset('image/'.$movie->poster_path) }}" alt="image">
+                                            @else
+                                                <img class="" alt="image"
+                                                     src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $movie->poster_path }}">
+                                            @endif
                                         </a>
                                     </x-slot>
                                     <a href="{{ route('movies.show', $movie->slug) }}">

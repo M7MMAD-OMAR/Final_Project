@@ -83,7 +83,7 @@
                                     <a href="{{ route('movies.show', $lmovie->slug) }}">
                                         @if($lmovie->tmdb_id === null)
                                             <img src="{{ asset('image/'.$lmovie->poster_path) }}" alt="image"
-                                                 class="object-cover">
+                                                 class="w-full h-full rounded-lg">
                                         @else
                                             <img class="w-full h-full rounded-lg" alt="image"
                                                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $lmovie->poster_path }}">

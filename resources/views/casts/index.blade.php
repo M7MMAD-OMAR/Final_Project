@@ -5,8 +5,13 @@
                 <x-movie-card>
                     <x-slot name="image">
                         <a href="{{ route('casts.show', $cast->slug) }}">
-                            <img class=""
-                                src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $cast->poster_path }}">
+                            @if($cast->tmdb_id === null)
+                                <img src="{{ asset('image/'.$cast->poster_path) }}" alt="image"
+                                     class="">
+                            @else
+                                <img class="" alt="image"
+                                     src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $cast->poster_path }}">
+                            @endif
                         </a>
                     </x-slot>
                     <a href="{{ route('casts.show', $cast->id) }}">
