@@ -6,8 +6,13 @@
                     <div class="flex">
                         <div class="w-3/12">
                             <div class="w-full">
-                                <img class="w-full h-full rounded"
-                                    src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $movie->poster_path }}">
+                                @if($movie->tmdb_id === null)
+                                    <img src="{{ asset('image/'.$movie->poster_path) }}" alt="image"
+                                         class="object-cover">
+                                @else
+                                    <img class="w-full h-full rounded" alt="image"
+                                         src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $movie->poster_path }}">
+                                @endif
                             </div>
                         </div>
                         <div class="w-8/12">
@@ -54,8 +59,13 @@
                                 <x-movie-card>
                                     <x-slot name="image">
                                         <a href="{{ route('casts.show', $cast->slug) }}">
-                                            <img class=""
-                                                src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $cast->poster_path }}">
+                                            @if($cast->tmdb_id === null)
+                                                <img src="{{ asset('image/'.$cast->poster_path) }}" alt="image"
+                                                     class="object-cover">
+                                            @else
+                                                <img class="" alt="image"
+                                                     src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $cast->poster_path }}">
+                                            @endif
                                         </a>
                                     </x-slot>
                                     <a href="{{ route('casts.show', $cast->slug) }}">
@@ -71,8 +81,13 @@
                             @if (!empty($latest))
                                 @foreach ($latest as $lmovie)
                                     <a href="{{ route('movies.show', $lmovie->slug) }}">
-                                        <img class="w-full h-full rounded-lg"
-                                            src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $lmovie->poster_path }}">
+                                        @if($lmovie->tmdb_id === null)
+                                            <img src="{{ asset('image/'.$lmovie->poster_path) }}" alt="image"
+                                                 class="object-cover">
+                                        @else
+                                            <img class="w-full h-full rounded-lg" alt="image"
+                                                 src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $lmovie->poster_path }}">
+                                        @endif
                                     </a>
                                 @endforeach
                             @endif
