@@ -38,8 +38,9 @@ Route::middleware(['auth:sanctum', 'verified', 'role:admin'])->prefix('admin')->
     Route::get('genres', GenreIndex::class)->name('genres.index');
     Route::post('genres', [GenreController::class, 'store'])->name('genre.store');
     Route::get('casts', CastIndex::class)->name('casts.index');
+    Route::post('casts', [CastController::class, 'store'])->name('cast.store');
     Route::get('tags', TagIndex::class)->name('tags.index');
-});
+}); Route::post('tags', [TagController::class, 'store'])->name('tag.store');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

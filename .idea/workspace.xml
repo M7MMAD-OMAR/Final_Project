@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="fix form series">
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="fix form casts">
+      <change afterPath="$PROJECT_DIR$/public/image/photos_movies/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/photos_movies/M7MMAD_OMAR_camila_mause_43df5331-0e71-4c3c-b9dd-98bd62ccb08f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/image/photos_movies/Shlet_raven_body_with_human_face_occult_paint_in_face_inside_Sm_40cd3c8a-bc19-435d-9f63-70607efef83f.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GenreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/GenreController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_11_01_205929_create_casts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_11_01_205929_create_casts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CastController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CastController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/livewire/cast-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/cast-index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/genre-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/genre-index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +229,7 @@
       <workItem from="1662329912712" duration="1581000" />
       <workItem from="1662364671922" duration="91000" />
       <workItem from="1662449380546" duration="32000" />
-      <workItem from="1662643503141" duration="14585000" />
+      <workItem from="1662643503141" duration="15444000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -439,7 +441,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662673001774</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix form casts">
+      <created>1662674005055</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1662674005055</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix form casts">
+      <created>1662674461398</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1662674461398</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -479,6 +495,7 @@
     <MESSAGE value="create series form" />
     <MESSAGE value="add image" />
     <MESSAGE value="fix form series" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix form series" />
+    <MESSAGE value="fix form casts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix form casts" />
   </component>
 </project>

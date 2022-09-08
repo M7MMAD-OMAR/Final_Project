@@ -20,16 +20,15 @@ class CastController extends Controller
         return view('casts.show', compact('cast'));
     }
 
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
         $image_name = $request->file('poster_path')->getClientOriginalName();
         Cast::create([
 //            'tmdb_id' => $newCast['id'],
             'name' => $request['name'],
             'slug' => Str::slug($request['name']),
-            'poster_path' => $request->file('poster_path')->storeAs('photos_movies',$image_name ,'photo_movie'),
+            'poster_path' => $request->file('poster_path')->storeAs('photos_movies', $image_name, 'photo_movie'),
         ]);
-
-
-                    return back()->with('success', 'Ok it\'s saved');
+        return back()->with('success', 'Ok it\'s saved');
     }
 }
