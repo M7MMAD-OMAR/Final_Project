@@ -8,6 +8,8 @@ use Illuminate\Support\Str;
 
 class MovieController extends Controller
 {
+
+
     public function index()
     {
         $movies = Movie::orderBy('created_at', 'desc')->paginate(18);
@@ -23,7 +25,8 @@ class MovieController extends Controller
      * @throws \Exception
      */
     public function store(Request $request) {
-        $temp = $request->file('poster_path')::store('photos_movies', 'photo_movie');
+        $poster_name = $request->file('poster_path')->getClientOriginalName();
+        $backdrop_name = $request->file('poster_path')->getClientOriginalName();
         $movies = Movie::create([
 //            'tmdb_id' => random_int(0, 10000),
             'title' => $request['title'],
@@ -36,8 +39,8 @@ class MovieController extends Controller
             'is_public' => $request['is_public'],
             'overview' => $request['overview'],
             'visits' => $request['visits'],
-            'poster_path' => $temp,
-            'backdrop_path' => $request['backdrop_path']
+            'poster_path' => $request->file('poster_path')->storeAs('photos_movies',$poster_name ,'photo_movie'),
+            'backdrop_path' => $request->file('backdrop_path')->storeAs('photos_movies',$backdrop_name ,'photo_movie'),
         ]);
         $movies->save();
         return back()->with('success', 'Ok it\'s saved');

@@ -4,7 +4,7 @@
     <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="change form in movies and fix form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +225,7 @@
       <workItem from="1662329912712" duration="1581000" />
       <workItem from="1662364671922" duration="91000" />
       <workItem from="1662449380546" duration="32000" />
-      <workItem from="1662643503141" duration="6000000" />
+      <workItem from="1662643503141" duration="9015000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -360,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662650855755</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="change form in movies and fix form">
+      <created>1662651285477</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1662651285477</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

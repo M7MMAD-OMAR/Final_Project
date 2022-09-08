@@ -2,7 +2,7 @@
 
     <div class="">
         <section class="text-gray-600 body-font relative container mx-auto px-8 py-8 rounded-xl">
-            <form action="{{ route('admin.movie.store') }}" method="POST">
+            <form action="{{ route('admin.movie.store') }}"  enctype="multipart/form-data" method="POST">
                 @csrf
                 <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Create Movies</h2>
                 <p class="leading-relaxed mb-5 text-gray-600"></p>
@@ -57,13 +57,16 @@
                     <input aria-describedby="file_input_help" id="file_input" type="file" name="poster_path"
                            class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400">
                     <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">SVG, PNG, JPG or
-                        GIF</p>
+                            GIF</p>
                 </div>
 
                 <div class="relative mb-4">
-                    <label for="backdrop_path" class="leading-7 text-sm text-gray-600">Backdrop Image</label>
-                    <input type="text" id="backdrop_path" name="backdrop_path" required
-                           class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="backdrop_path"
+                           class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Backdrop Image</label>
+                    <input  id="backdrop_path" type="file" name="backdrop_path"
+                           class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400">
+                    <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" >SVG, PNG, JPG or
+                        GIF</p>
                 </div>
                 <div class="relative mb-4">
                     <label for="overview" class="leading-7 text-sm text-gray-600">Overview</label>
@@ -232,6 +235,7 @@
                         <td class="px-4 py-3 text-ms font-semibold border">
                             <img class="h-12 w-12 rounded"
                                  src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $table_movie->poster_path }}">
+                            <img src="{{ asset('image/'.$table_movie->poster_path) }}" alt="" class="h-12 w-12 rounded">
                         </td>
 
                         <td class="px-4 py-3 text-sm border">
