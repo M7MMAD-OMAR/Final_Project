@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="add image">
-      <change afterPath="$PROJECT_DIR$/public/image/photos_movies/laravel_new.png" afterDir="false" />
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="fix form series">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MovieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SerieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SerieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/serie-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/serie-index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_11_01_210027_create_genres_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_11_01_210027_create_genres_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/genre-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/genre-index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +225,7 @@
       <workItem from="1662329912712" duration="1581000" />
       <workItem from="1662364671922" duration="91000" />
       <workItem from="1662449380546" duration="32000" />
-      <workItem from="1662643503141" duration="12829000" />
+      <workItem from="1662643503141" duration="13513000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -427,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662671586278</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="fix form series">
+      <created>1662672312796</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1662672312796</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,6 +469,7 @@
     <MESSAGE value="fix form photo" />
     <MESSAGE value="create series form" />
     <MESSAGE value="add image" />
-    <option name="LAST_COMMIT_MESSAGE" value="add image" />
+    <MESSAGE value="fix form series" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix form series" />
   </component>
 </project>

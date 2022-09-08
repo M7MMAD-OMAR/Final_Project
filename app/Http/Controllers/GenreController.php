@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Genre;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class GenreController extends Controller
 {
@@ -15,6 +16,10 @@ class GenreController extends Controller
     }
 
     public function store(Request $request) {
-        
+        $genre = Genre::create([
+            'title' => $request['title'],
+            'slug' => str::slug('title')
+        ]);
+        return back()->with('success', '');
     }
 }
