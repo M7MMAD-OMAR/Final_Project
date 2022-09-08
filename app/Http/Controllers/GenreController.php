@@ -18,8 +18,8 @@ class GenreController extends Controller
     public function store(Request $request) {
         $genre = Genre::create([
             'title' => $request['title'],
-            'slug' => str::slug('title')
+            'slug' => str::slug($request['title'])
         ]);
-        return back()->with('success', '');
+        return back()->with('success', 'send data success');
     }
 }

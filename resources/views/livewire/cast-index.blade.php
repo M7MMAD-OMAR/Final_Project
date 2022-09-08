@@ -1,4 +1,23 @@
 <section class="container mx-auto p-6 font-mono">
+
+    <form action="{{ route('admin.movie.store') }}" enctype="multipart/form-data" method="POST">
+        @csrf
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Create Movies</h2>
+        <p class="leading-relaxed mb-5 text-gray-600"></p>
+        <div class="relative mb-4">
+            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+            <input type="text" id="name" name="name" required
+                   class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+        </div>
+
+
+        <input type="submit" value="Submit"
+               class="text-white cursor-pointer bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+        <p class="text-xs text-gray-500 mt-3"></p>
+    </form>
+
+
+
     <div class="w-full flex mb-4 p-2 justify-end">
         <form class="flex space-x-4 shadow bg-white rounded-md m-2 p-2">
             <div class="p-1 flex items-center">
@@ -66,6 +85,7 @@
                         class="text-md font-semibold tracking-wide text-left text-gray-900 bg-gray-100 uppercase border-b border-gray-600">
                         <th class="px-4 py-3">Name</th>
                         <th class="px-4 py-3">Poster</th>
+                        <th class="px-4 py-3">Poster view</th>
                         <th class="px-4 py-3">Manage</th>
                     </tr>
                 </thead>
@@ -76,7 +96,15 @@
                                 {{ $cast->name }}
                             </td>
                             <td class="px-4 py-3 text-ms font-semibold border">{{ $cast->poster_path }}</td>
-
+                            <td class="px-4 py-3 text-ms font-semibold border">
+                            @if($cast->tmdb_id === null)
+                                <img src="{{ asset('image/'.$cast->poster_path) }}" alt=""
+                                     class="h-12 w-12 rounded">
+                            @else
+                                <img class="h-16 w-12 rounded"
+                                     src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $cast->poster_path }}">
+                            @endif
+                            </td>
                             <td class="px-4 py-3 text-sm border">
                                 <x-m-button wire:click="showEditModal({{ $cast->id }})"
                                     class="bg-green-500 hover:bg-green-700 text-white">Edit</x-m-button>
