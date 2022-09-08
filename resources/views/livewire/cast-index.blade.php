@@ -10,6 +10,15 @@
                    class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
         </div>
 
+        <div class="relative mb-4">
+            <label for="backdrop_path"
+                   class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Backdrop
+                Image</label>
+            <input id="backdrop_path" type="file" name="backdrop_path"
+                   class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400">
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">SVG, PNG, JPG or
+                GIF</p>
+        </div>
 
         <input type="submit" value="Submit"
                class="text-white cursor-pointer bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
