@@ -19,17 +19,20 @@ class MovieController extends Controller
         return view('movies.show', compact('movie', 'latest'));
     }
 
+    /**
+     * @throws \Exception
+     */
     public function store(Request $request) {
         $movies = Movie::create([
-//            'tmdb_id' => $request['id'],
+//            'tmdb_id' => random_int(0, 10000),
             'title' => $request['title'],
             'slug'  => Str::slug($request['title']),
-            'runtime' => $request['runtime'],
+//            'runtime' => $request['runtime'],
             'rating' => $request['vote_average'],
             'release_date' => $request['release_date'],
             'lang' => $request['original_language'],
             'video_format' => 'HD',
-            'is_public' => false,
+            'is_public' => $request['is_public'],
             'overview' => $request['overview'],
             'visits' => $request['visits'],
             'poster_path' => $request['poster_path'],

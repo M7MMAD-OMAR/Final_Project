@@ -47,9 +47,9 @@ class MovieIndex extends Component
         ];
 
     protected $rules = [
-        'title' => 'required',
+        'title' => 'required|min:3',
         'posterPath' => 'required',
-        'runtime' => 'required',
+        'runtime' => '',
         'lang' => 'required',
         'videoFormat' => 'required',
         'rating' => 'required',

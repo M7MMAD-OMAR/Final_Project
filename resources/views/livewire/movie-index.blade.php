@@ -10,19 +10,19 @@
                         <label for="title" class="leading-7 text-sm text-gray-600">Title</label>
                         <input type="text" id="title" name="title" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
-                    <div class="relative mb-4">
-                        <label for="slug" class="leading-7 text-sm text-gray-600">Slug</label>
-                        <input type="text" id="slug" name="slug" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
+{{--                    <div class="relative mb-4">--}}
+{{--                        <label for="slug" class="leading-7 text-sm text-gray-600">Slug</label>--}}
+{{--                        <input type="text" id="slug" name="slug" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">--}}
+{{--                    </div>--}}
+
+{{--                <div class="relative mb-4">--}}
+{{--                    <label for="runtime" class="leading-7 text-sm text-gray-600">Run Time</label>--}}
+{{--                    <input type="text" id="runtime" name="runtime" required placeholder="00:00" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">--}}
+{{--                </div>--}}
 
                 <div class="relative mb-4">
-                    <label for="runtime" class="leading-7 text-sm text-gray-600">Run Time</label>
-                    <input type="time" id="runtime" name="runtime" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-
-                <div class="relative mb-4">
-                    <label for="rating" class="leading-7 text-sm text-gray-600">Rating</label>
-                    <input type="number" id="rating" name="rating" min="0" max="8" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="vote_average" class="leading-7 text-sm text-gray-600">Rating</label>
+                    <input type="number" id="vote_average" name="vote_average" min="0" max="8" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
 
                 <div class="relative mb-4">
@@ -31,24 +31,38 @@
                 </div>
 
                 <div class="relative mb-4">
-                    <label for="lang" class="leading-7 text-sm text-gray-600">Lang</label>
-                    <input type="text" id="lang" name="lang" max="2" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    <label for="original_language" class="leading-7 text-sm text-gray-600">Lang</label>
+                    <input type="text" id="original_language" name="original_language" maxlength="2" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
 
                 <div class="relative mb-4">
                     <label for="is_public" class="leading-7 text-sm text-gray-600">Public</label>
                     <input type="number" id="is_public" name="is_public" min="0" max="1" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                 </div>
+
+                <div class="relative mb-4">
+                    <label for="visits" class="leading-7 text-sm text-gray-600">Visits Number</label>
+                    <input type="number" id="visits" name="visits" min="0" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+
+                <div class="relative mb-4">
+                    <label for="poster_path" class="leading-7 text-sm text-gray-600">Image</label>
+                    <input type="text" id="poster_path" name="poster_path"  required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+
+                <div class="relative mb-4">
+                    <label for="backdrop_path" class="leading-7 text-sm text-gray-600">Backdrop Image</label>
+                    <input type="text" id="backdrop_path" name="backdrop_path"    required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
                     <div class="relative mb-4">
-                        <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-                        <textarea id="message" name="message" required class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                        <label for="overview" class="leading-7 text-sm text-gray-600">Overview</label>
+                        <textarea id="overview" name="overview" required  class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
                     </div>
                     <input type="submit" value="Submit" class="text-white cursor-pointer bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
                     <p class="text-xs text-gray-500 mt-3"></p>
             </form>
         </section>
     </div>
-
 
 
 
