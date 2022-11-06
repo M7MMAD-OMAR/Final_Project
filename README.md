@@ -8,6 +8,8 @@
 
 Use DataBase MySQL and Import file  <b> "movie_app.sql" </b> from project file
 
+## Don't forget to like the project 😊😁
+
 <hr>
 <br>
 
