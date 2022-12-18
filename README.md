@@ -25,7 +25,6 @@ Rename<code>.env.example</code> To <code>.env</code>
 <code>npm install</code>
 <br>
 
-
 Create DataBase 
 * movie_app
 
