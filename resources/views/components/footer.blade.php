@@ -49,4 +49,8 @@
             </a>
         </span>
     </div>
+    <div class="p-10 text-center font-bold text-xl bg-gray-900">
+        Created By <a href="https://parmage.com" target="_blank" class="border-b border-blue-300">
+            PARMAGE TECH</a>
+    </div>
 </footer>

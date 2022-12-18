@@ -13,6 +13,34 @@ Use DataBase MySQL and Import file  <b> "movie_app.sql" </b> from project file
 <hr>
 <br>
 
+## How To Use?
+<hr>
+
+<code>composer install</code>
+<br>
+
+Rename<code>.env.example</code> To <code>.env</code>
+<br>
+
+<code>npm install</code>
+<br>
+
+
+Create DataBase 
+* movie_app
+
+Import file from project
+
+*   movie_app.sql
+
+<code>php artisan migrate</code>
+
+<code>php artisan mi:fr</code>
+
+Run in Terminal:
+
+<code>php artisan key:generate</code>
+
 #### I Used
 <hr>
 
@@ -23,7 +51,10 @@ Use DataBase MySQL and Import file  <b> "movie_app.sql" </b> from project file
     * Api
     * Tailwind CSS
     * NodeJS
+    * API:   https://www.themoviedb.org/
     * And Other Library...
+
+
 
 
 
