@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="delete docker files and fix create movie page">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="add comment and fix page">
       <change beforePath="$PROJECT_DIR$/app/Http/Livewire/MovieIndex.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/MovieIndex.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/movie-index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +244,7 @@
       <workItem from="1662643503141" duration="17511000" />
       <workItem from="1671383049864" duration="5455000" />
       <workItem from="1671400958129" duration="53000" />
-      <workItem from="1673017156005" duration="4822000" />
+      <workItem from="1673017156005" duration="5303000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -563,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673042070375</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="add comment and fix page">
+      <created>1673042868915</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1673042868915</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -584,7 +589,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="add favicon.ico" />
     <MESSAGE value="edit file" />
     <MESSAGE value="change footer and add logo" />
     <MESSAGE value="change image and add styleing" />
@@ -609,7 +613,8 @@
     <MESSAGE value="fix website and change styleing main page" />
     <MESSAGE value="edit files and add login button" />
     <MESSAGE value="delete docker files and fix create movie page" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete docker files and fix create movie page" />
+    <MESSAGE value="add comment and fix page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comment and fix page" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

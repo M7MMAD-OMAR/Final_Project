@@ -1,5 +1,7 @@
 <section class="container mx-auto p-6 font-mono">
 
+
+    {{--    Create Movice Article --}}
     <div class="">
         <section class="text-gray-600 body-font relative container mx-auto px-8 py-8 rounded-xl">
             <form action="{{ route('admin.movie.store') }}" enctype="multipart/form-data" method="POST">

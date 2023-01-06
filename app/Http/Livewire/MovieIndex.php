@@ -160,6 +160,11 @@ class MovieIndex extends Component
         $this->reset();
     }
 
+
+    /**
+     * @param $movieId
+     * @return void
+     */
     public function deleteMovie($movieId)
     {
         $movie = Movie::findOrFail($movieId);
@@ -168,6 +173,11 @@ class MovieIndex extends Component
         $this->reset();
     }
 
+
+    /**
+     * @param $movieId
+     * @return void
+     */
     public function showTrailerModal($movieId)
     {
         $this->movie = Movie::findOrFail($movieId);
@@ -175,6 +185,9 @@ class MovieIndex extends Component
 
     }
 
+    /**
+     * @return void
+     */
     public function addTrailer()
     {
         $this->movie->trailers()->create([
@@ -185,6 +198,10 @@ class MovieIndex extends Component
         $this->reset();
     }
 
+    /**
+     * @param $trailerId
+     * @return void
+     */
     public function deleteTrailer($trailerId)
     {
         $trailer = TrailerUrl::findOrFail($trailerId);
@@ -193,36 +210,64 @@ class MovieIndex extends Component
         $this->reset();
     }
 
+
+    /**
+     * @param $movieId
+     * @return void
+     */
     public function showMovieDeatil($movieId)
     {
         $this->movie = Movie::findOrFail($movieId);
         $this->showMovieDetailModal = true;
     }
 
+
+    /**
+     * @return void
+     */
     public function tagAdded()
     {
         $this->dispatchBrowserEvent('banner-message', ['style' => 'success', 'message' => 'Tag Added']);
         $this->reset();
     }
 
+    /**
+     * @return void
+     */
     public function tagDetached()
     {
         $this->dispatchBrowserEvent('banner-message', ['style' => 'success', 'message' => 'Tag detached']);
         $this->reset();
     }
+
+    /**
+     * @return void
+     */
     public function castAdded()
     {
         $this->dispatchBrowserEvent('banner-message', ['style' => 'success', 'message' => 'Cast Added']);
         $this->reset();
     }
 
+
+    /**
+     * @return void
+     */
     public function castDetached()
     {
         $this->dispatchBrowserEvent('banner-message', ['style' => 'success', 'message' => 'Cast detached']);
         $this->reset();
     }
 
-      public function render()
+
+    /**
+     *
+     * @return \Illuminate\Contracts\Foundation\Application
+     *  |\Illuminate\Contracts\View\Factory
+     *  |\Illuminate\Contracts\View\View
+     *
+     */
+    public function render()
     {
         return view('livewire.movie-index', [
             'movies' => Movie::search('title', $this->search)->orderBy($this->sortColumn, $this->sortDirection)->paginate($this->perPage)
