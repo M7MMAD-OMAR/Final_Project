@@ -100,9 +100,15 @@ class MovieIndex extends Component
         }
     }
 
+
+    /**
+     * to sorting table by column asc OR desc
+     * @param $column
+     * @return void
+     */
     public function sortByColumn($column)
     {
-        if($this->sortColumn = $column){
+        if ($this->sortColumn = $column) {
             $this->sortDirection = $this->sortDirection === 'asc' ? 'desc' : 'asc';
         } else {
             $this->sortDirection = 'asc';

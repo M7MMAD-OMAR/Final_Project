@@ -245,7 +245,8 @@
                                      class="h-12 w-12 rounded">
                             @else
                                 <img class="h-12 w-12 rounded"
-                                     src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $table_movie->poster_path }}">
+                                     src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $table_movie->poster_path }}"
+                                     alt="image">
                             @endif
                         </td>
 
@@ -270,6 +271,8 @@
             </div>
         </div>
     </div>
+
+    {{-- Show movie button from table --}}
     <x-jet-dialog-modal wire:model="showMovieModal">
         <x-slot name="title">Update Movie</x-slot>
         <x-slot name="content">
@@ -393,6 +396,8 @@
             <x-m-button wire:click="updateMovie">Update</x-m-button>
         </x-slot>
     </x-jet-dialog-modal>
+
+    {{--    Add trailer movice button --}}
     <x-jet-dialog-modal wire:model="showTrailer">
         <x-slot name="title">Trailer Movie</x-slot>
         <x-slot name="content">
@@ -440,6 +445,8 @@
             <x-m-button wire:click="addTrailer">Add Trailer</x-m-button>
         </x-slot>
     </x-jet-dialog-modal>
+
+
     <x-jet-dialog-modal wire:model="showMovieDetailModal">
         <x-slot name="title">Movie Details</x-slot>
         <x-slot name="content">
