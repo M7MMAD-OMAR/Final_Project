@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="@localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.43">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.45">
     <root id="1">
       <DefaultCasing>lower/lower</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -1149,17 +1149,17 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </table>
     <column id="329" parent="304" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="330" parent="304" name="cast_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="331" parent="304" name="movie_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -1193,35 +1193,35 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="338" parent="305" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="339" parent="305" name="tmdb_id">
-      <DataType>bigint|0s</DataType>
+      <DasType>bigint|0s</DasType>
       <Position>2</Position>
     </column>
     <column id="340" parent="305" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="341" parent="305" name="slug">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="342" parent="305" name="poster_path">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <DefaultExpression>&apos;none.png&apos;</DefaultExpression>
       <Position>5</Position>
     </column>
     <column id="343" parent="305" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>6</Position>
     </column>
     <column id="344" parent="305" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>7</Position>
     </column>
     <index id="345" parent="305" name="PRIMARY">
@@ -1244,58 +1244,58 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="349" parent="306" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="350" parent="306" name="tmdb_id">
-      <DataType>bigint|0s</DataType>
+      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="351" parent="306" name="season_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="352" parent="306" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="353" parent="306" name="episode_number">
-      <DataType>int|0s</DataType>
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="354" parent="306" name="is_public">
-      <DataType>tinyint(1)|0s</DataType>
+      <DasType>tinyint(1)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
     <column id="355" parent="306" name="visits">
-      <DataType>bigint|0s</DataType>
+      <DasType>bigint|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
     <column id="356" parent="306" name="slug">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
     <column id="357" parent="306" name="overview">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
     <column id="358" parent="306" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>10</Position>
     </column>
     <column id="359" parent="306" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>11</Position>
     </column>
     <foreign-key id="360" parent="306" name="episodes_season_id_foreign">
@@ -1327,37 +1327,37 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="366" parent="307" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="367" parent="307" name="uuid">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="368" parent="307" name="connection">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="369" parent="307" name="queue">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="370" parent="307" name="payload">
-      <DataType>longtext|0s</DataType>
+      <DasType>longtext|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="371" parent="307" name="exception">
-      <DataType>longtext|0s</DataType>
+      <DasType>longtext|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
     <column id="372" parent="307" name="failed_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>7</Position>
@@ -1382,17 +1382,17 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="377" parent="308" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="378" parent="308" name="genre_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="379" parent="308" name="movie_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -1426,30 +1426,30 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="386" parent="309" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="387" parent="309" name="tmdb_id">
-      <DataType>bigint|0s</DataType>
+      <DasType>bigint|0s</DasType>
       <Position>2</Position>
     </column>
     <column id="388" parent="309" name="title">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="389" parent="309" name="slug">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="390" parent="309" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>5</Position>
     </column>
     <column id="391" parent="309" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>6</Position>
     </column>
     <index id="392" parent="309" name="PRIMARY">
@@ -1480,17 +1480,17 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </key>
     <column id="398" parent="310" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>int unsigned|0s</DataType>
+      <DasType>int unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="399" parent="310" name="migration">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="400" parent="310" name="batch">
-      <DataType>int|0s</DataType>
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -1505,17 +1505,17 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="403" parent="311" name="permission_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="404" parent="311" name="model_type">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="405" parent="311" name="model_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -1543,17 +1543,17 @@ model_type</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="410" parent="312" name="role_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="411" parent="312" name="model_type">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="412" parent="312" name="model_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
@@ -1582,81 +1582,81 @@ model_type</ColNames>
     </key>
     <column id="417" parent="313" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="418" parent="313" name="tmdb_id">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
     </column>
     <column id="419" parent="313" name="title">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="420" parent="313" name="release_date">
-      <DataType>date|0s</DataType>
+      <DasType>date|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="421" parent="313" name="runtime">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="422" parent="313" name="lang">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
     <column id="423" parent="313" name="video_format">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
     <column id="424" parent="313" name="is_public">
-      <DataType>tinyint(1)|0s</DataType>
+      <DasType>tinyint(1)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
     <column id="425" parent="313" name="visits">
-      <DataType>bigint|0s</DataType>
+      <DasType>bigint|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
     <column id="426" parent="313" name="slug">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
     <column id="427" parent="313" name="rating">
-      <DataType>decimal(8,1 digit)|0s</DataType>
+      <DasType>decimal(8,1 digit)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
     <column id="428" parent="313" name="poster_path">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>12</Position>
     </column>
     <column id="429" parent="313" name="backdrop_path">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <Position>13</Position>
     </column>
     <column id="430" parent="313" name="overview">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>14</Position>
     </column>
     <column id="431" parent="313" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>15</Position>
     </column>
     <column id="432" parent="313" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>16</Position>
     </column>
     <index id="433" parent="313" name="PRIMARY">
@@ -1678,17 +1678,17 @@ model_type</ColNames>
       <UnderlyingIndexName>movies_tmdb_id_unique</UnderlyingIndexName>
     </key>
     <column id="437" parent="314" name="email">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="438" parent="314" name="token">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="439" parent="314" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>3</Position>
     </column>
     <index id="440" parent="314" name="password_resets_email_index">
@@ -1697,26 +1697,26 @@ model_type</ColNames>
     </index>
     <column id="441" parent="315" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="442" parent="315" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="443" parent="315" name="guard_name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="444" parent="315" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="445" parent="315" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>5</Position>
     </column>
     <index id="446" parent="315" name="PRIMARY">
@@ -1740,44 +1740,44 @@ guard_name</ColNames>
     </key>
     <column id="450" parent="316" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="451" parent="316" name="tokenable_type">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="452" parent="316" name="tokenable_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="453" parent="316" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="454" parent="316" name="token">
-      <DataType>varchar(64)|0s</DataType>
+      <DasType>varchar(64)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="455" parent="316" name="abilities">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <Position>6</Position>
     </column>
     <column id="456" parent="316" name="last_used_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>7</Position>
     </column>
     <column id="457" parent="316" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>8</Position>
     </column>
     <column id="458" parent="316" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>9</Position>
     </column>
     <index id="459" parent="316" name="PRIMARY">
@@ -1804,12 +1804,12 @@ tokenable_id</ColNames>
       <UnderlyingIndexName>personal_access_tokens_token_unique</UnderlyingIndexName>
     </key>
     <column id="464" parent="317" name="permission_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="465" parent="317" name="role_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
@@ -1842,26 +1842,26 @@ role_id</ColNames>
     </key>
     <column id="471" parent="318" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="472" parent="318" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="473" parent="318" name="guard_name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="474" parent="318" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="475" parent="318" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>5</Position>
     </column>
     <index id="476" parent="318" name="PRIMARY">
@@ -1885,46 +1885,46 @@ guard_name</ColNames>
     </key>
     <column id="480" parent="319" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="481" parent="319" name="tmdb_id">
-      <DataType>bigint|0s</DataType>
+      <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="482" parent="319" name="serie_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="483" parent="319" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="484" parent="319" name="season_number">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="485" parent="319" name="slug">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
     <column id="486" parent="319" name="poster_path">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
     <column id="487" parent="319" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>8</Position>
     </column>
     <column id="488" parent="319" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>9</Position>
     </column>
     <foreign-key id="489" parent="319" name="seasons_serie_id_foreign">
@@ -1956,45 +1956,45 @@ guard_name</ColNames>
     </key>
     <column id="495" parent="320" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="496" parent="320" name="tmdb_id">
-      <DataType>bigint|0s</DataType>
+      <DasType>bigint|0s</DasType>
       <Position>2</Position>
     </column>
     <column id="497" parent="320" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="498" parent="320" name="slug">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="499" parent="320" name="created_year">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
     </column>
     <column id="500" parent="320" name="poster_path">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <DefaultExpression>&apos;none.png&apos;</DefaultExpression>
       <Position>6</Position>
     </column>
     <column id="501" parent="320" name="visits">
-      <DataType>bigint|0s</DataType>
+      <DasType>bigint|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
     <column id="502" parent="320" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>8</Position>
     </column>
     <column id="503" parent="320" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>9</Position>
     </column>
     <index id="504" parent="320" name="PRIMARY">
@@ -2016,29 +2016,29 @@ guard_name</ColNames>
       <UnderlyingIndexName>series_tmdb_id_unique</UnderlyingIndexName>
     </key>
     <column id="508" parent="321" name="id">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="509" parent="321" name="user_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <Position>2</Position>
     </column>
     <column id="510" parent="321" name="ip_address">
-      <DataType>varchar(45)|0s</DataType>
+      <DasType>varchar(45)|0s</DasType>
       <Position>3</Position>
     </column>
     <column id="511" parent="321" name="user_agent">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="512" parent="321" name="payload">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="513" parent="321" name="last_activity">
-      <DataType>int|0s</DataType>
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
@@ -2061,42 +2061,42 @@ guard_name</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="518" parent="322" name="tag_id">
-      <DataType>int|0s</DataType>
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="519" parent="322" name="taggable_id">
-      <DataType>int|0s</DataType>
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="520" parent="322" name="taggable_type">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="521" parent="323" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="522" parent="323" name="tag_name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="523" parent="323" name="slug">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="524" parent="323" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="525" parent="323" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>5</Position>
     </column>
     <index id="526" parent="323" name="PRIMARY">
@@ -2119,30 +2119,30 @@ guard_name</ColNames>
     </key>
     <column id="530" parent="324" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="531" parent="324" name="team_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="532" parent="324" name="email">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="533" parent="324" name="role">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="534" parent="324" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>5</Position>
     </column>
     <column id="535" parent="324" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>6</Position>
     </column>
     <foreign-key id="536" parent="324" name="team_invitations_team_id_foreign">
@@ -2172,30 +2172,30 @@ email</ColNames>
     </key>
     <column id="541" parent="325" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="542" parent="325" name="team_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="543" parent="325" name="user_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="544" parent="325" name="role">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="545" parent="325" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>5</Position>
     </column>
     <column id="546" parent="325" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>6</Position>
     </column>
     <index id="547" parent="325" name="PRIMARY">
@@ -2219,31 +2219,31 @@ user_id</ColNames>
     </key>
     <column id="551" parent="326" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="552" parent="326" name="user_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="553" parent="326" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="554" parent="326" name="personal_team">
-      <DataType>tinyint(1)|0s</DataType>
+      <DasType>tinyint(1)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="555" parent="326" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>5</Position>
     </column>
     <column id="556" parent="326" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>6</Position>
     </column>
     <index id="557" parent="326" name="PRIMARY">
@@ -2262,36 +2262,36 @@ user_id</ColNames>
     </key>
     <column id="560" parent="327" name="id">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="561" parent="327" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="562" parent="327" name="embed_html">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="563" parent="327" name="trailerable_id">
-      <DataType>int|0s</DataType>
+      <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
     <column id="564" parent="327" name="trailerable_type">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="565" parent="327" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>6</Position>
     </column>
     <column id="566" parent="327" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>7</Position>
     </column>
     <index id="567" parent="327" name="PRIMARY">
@@ -2306,55 +2306,55 @@ user_id</ColNames>
     </key>
     <column id="569" parent="328" name="id">
       <AutoIncrement>11</AutoIncrement>
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
     <column id="570" parent="328" name="name">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
     <column id="571" parent="328" name="email">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
     <column id="572" parent="328" name="email_verified_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="573" parent="328" name="password">
-      <DataType>varchar(255)|0s</DataType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
     <column id="574" parent="328" name="two_factor_secret">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <Position>6</Position>
     </column>
     <column id="575" parent="328" name="two_factor_recovery_codes">
-      <DataType>text|0s</DataType>
+      <DasType>text|0s</DasType>
       <Position>7</Position>
     </column>
     <column id="576" parent="328" name="remember_token">
-      <DataType>varchar(100)|0s</DataType>
+      <DasType>varchar(100)|0s</DasType>
       <Position>8</Position>
     </column>
     <column id="577" parent="328" name="current_team_id">
-      <DataType>bigint unsigned|0s</DataType>
+      <DasType>bigint unsigned|0s</DasType>
       <Position>9</Position>
     </column>
     <column id="578" parent="328" name="profile_photo_path">
-      <DataType>varchar(2048)|0s</DataType>
+      <DasType>varchar(2048)|0s</DasType>
       <Position>10</Position>
     </column>
     <column id="579" parent="328" name="created_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>11</Position>
     </column>
     <column id="580" parent="328" name="updated_at">
-      <DataType>timestamp|0s</DataType>
+      <DasType>timestamp|0s</DasType>
       <Position>12</Position>
     </column>
     <index id="581" parent="328" name="PRIMARY">

@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use mysql_xdevapi\Table;
 
 class MovieController extends Controller
 {
@@ -24,14 +26,19 @@ class MovieController extends Controller
     /**
      * @throws \Exception
      */
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
         $poster_name = $request->file('poster_path')->getClientOriginalName();
         $backdrop_name = $request->file('poster_path')->getClientOriginalName();
-        $movies = Movie::create([
-//            'tmdb_id' => random_int(0, 10000),
+        $old_user_id = User::latest('id')->first();
+        $old_user_id = (int)$old_user_id->id;
+
+
+        Movie::create([
+            'tmdb_id' => ($old_user_id + 1),
             'title' => $request['title'],
-            'slug'  => Str::slug($request['title']),
-//            'runtime' => $request['runtime'],
+            'slug' => Str::slug($request['title']),
+            'runtime' => 10,
             'rating' => $request['vote_average'],
             'release_date' => $request['release_date'],
             'lang' => $request['original_language'],
@@ -39,8 +46,8 @@ class MovieController extends Controller
             'is_public' => $request['is_public'],
             'overview' => $request['overview'],
             'visits' => $request['visits'],
-            'poster_path' => $request->file('poster_path')->storeAs('photos_movies',$poster_name ,'photo_movie'),
-            'backdrop_path' => $request->file('backdrop_path')->storeAs('photos_movies',$backdrop_name ,'photo_movie'),
+            'poster_path' => $request->file('poster_path')->storeAs('photos_movies', $poster_name, 'photo_movie'),
+            'backdrop_path' => $request->file('backdrop_path')->storeAs('photos_movies', $backdrop_name, 'photo_movie'),
         ]);
         return back()->with('success', 'Ok it\'s saved');
     }
