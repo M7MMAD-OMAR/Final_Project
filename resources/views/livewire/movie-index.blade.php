@@ -125,8 +125,10 @@
                                 </svg>
                             </div>
 
-                            <input wire:model="search" type="text" placeholder="Search by title"
-                                   class="px-8 py-3 w-full md:w-2/6 rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm"/>
+                            <label for="search">
+                                <input wire:model="search" id="search" type="text" placeholder="Search by title"
+                                       class="px-8 py-3 w-full md:w-2/6 rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0 text-sm"/>
+                            </label>
                         </div>
                     </div>
                     <div class="flex">
