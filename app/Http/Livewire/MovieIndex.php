@@ -42,10 +42,10 @@ class MovieIndex extends Component
 
     protected $listeners = [
         'tagAdded' => 'tagAdded',
-         'tagDetached' => 'tagDetached',
+        'tagDetached' => 'tagDetached',
         'castAdded' => 'castAdded',
         'castDetached' => 'castDetached'
-        ];
+    ];
 
     protected $rules = [
         'title' => 'required|min:3',
@@ -125,7 +125,6 @@ class MovieIndex extends Component
 
     public function loadMovie()
     {
-
         $this->title = $this->movie->title;
         $this->runtime = $this->movie->runtime;
         $this->lang = $this->movie->lang;
@@ -142,6 +141,9 @@ class MovieIndex extends Component
         $this->reset();
     }
 
+    /**
+     * @return void
+     */
     public function updateMovie()
     {
         $this->validate();

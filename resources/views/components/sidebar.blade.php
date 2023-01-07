@@ -9,7 +9,7 @@
               <div class="flex items-center">
                   <img src="{{ asset('favicon.png') }}" alt="Logo image" class="h-12 w-12">
 
-                  <span class="text-white text-2xl mx-2 font-semibold">Movie App</span>
+                  <span class="text-white text-2xl mx-2 font-semibold">Movie Gallery</span>
               </div>
           </a>
 
@@ -26,7 +26,7 @@
                         d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"/>
               </svg>
 
-              <span class="mx-3">Dashboard</span>
+              <span class="mx-3">Admin</span>
           </a>
 
           <a class="flex items-center mt-4 py-2 px-6 text-gray-100 hover:bg-gray-700 hover:bg-opacity-25 hover:text-gray-100"

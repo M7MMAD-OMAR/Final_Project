@@ -11,12 +11,19 @@ use mysql_xdevapi\Table;
 class MovieController extends Controller
 {
 
-
+    /**
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function index()
     {
         $movies = Movie::orderBy('created_at', 'desc')->paginate(18);
         return view('movies.index', compact('movies'));
     }
+
+    /**
+     * @param Movie $movie
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
     public function show(Movie $movie)
     {
         $latest = Movie::orderBy('created_at', 'desc')->take(9)->get();
@@ -30,12 +37,13 @@ class MovieController extends Controller
     {
         $poster_name = $request->file('poster_path')->getClientOriginalName();
         $backdrop_name = $request->file('poster_path')->getClientOriginalName();
+//       Get Last id from user table then convert to Int
         $old_user_id = User::latest('id')->first();
         $old_user_id = (int)$old_user_id->id;
 
 
         Movie::create([
-            'tmdb_id' => ($old_user_id + 1),
+            'tmdb_id' => ($old_user_id + 10000),
             'title' => $request['title'],
             'slug' => Str::slug($request['title']),
             'runtime' => 10,

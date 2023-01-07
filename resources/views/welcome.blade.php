@@ -2,6 +2,7 @@
     <main class="max-w-6xl mx-auto mt-6 min-h-screen">
         <a href="{{ route('login') }}" class="m-10 text-white font-bold bg-blue-500 p-2 rounded-md">Login</a>
 
+{{--        Start Movice Section --}}
         <section class="bg-gray-200 dark:bg-gray-900 dark:text-white mt-4 p-2 rounded">
             <div class="m-2 p-2 text-2xl font-bold text-indigo-600 dark:text-indigo-300">
                 <h1>Movies</h1>
@@ -56,6 +57,9 @@
                 @endforeach
             </div>
         </section>
+        {{--        End Movice Section --}}
+
+        {{--        Start Episodes Section --}}
         <section class="bg-gray-200 dark:bg-gray-900 dark:text-white mt-4 p-2 rounded">
             <div class="m-2 p-2 text-2xl font-bold text-indigo-600 dark:text-indigo-300">
                 <h1>Episodes</h1>
@@ -89,6 +93,10 @@
                 @endforeach
             </div>
         </section>
+        {{--        End Episodes Section --}}
+
+
+        {{--        Start Series Section --}}
         <section class="bg-gray-200 dark:bg-gray-900 dark:text-white mt-4 p-2 rounded">
             <div class="m-2 p-2 text-2xl font-bold text-indigo-600 dark:text-indigo-300">
                 <h1>Series</h1>
@@ -129,5 +137,7 @@
                 @endforeach
             </div>
         </section>
+        {{--        End Series Section --}}
+
     </main>
 </x-front-layout>

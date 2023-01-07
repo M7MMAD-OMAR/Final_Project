@@ -36,15 +36,14 @@
                     <h1 class="flex text-white font-bold text-xl">Latest episodes</h1>
                     <div class="grid grid-cols-3 gap-2">
                         @if (!empty($latest))
-                            @foreach ($latest as $lepisode)
-                                <a href="{{ route('movies.show', $lepisode->slug) }}">
+                            @foreach ($latest as $lEpisode)
+                                <a href="{{ route('movies.show', $lEpisode->slug) }}">
                                     <img class="w-full h-full rounded-lg"
-                                        src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $lepisode->season->poster_path }}">
+                                         src="https://www.themoviedb.org/t/p/w220_and_h330_face/{{ $lEpisode->season->poster_path }}">
                                 </a>
                             @endforeach
                         @endif
                     </div>
-                </div>
                 </div>
             </section>
         </main>
