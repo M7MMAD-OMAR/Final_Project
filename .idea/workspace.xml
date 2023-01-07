@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="add comment and fix page create movie">
-      <change afterPath="$PROJECT_DIR$/public/favicon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/navigation-menu.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="add logo image and change login, register page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,7 +244,7 @@
       <workItem from="1671383049864" duration="5455000" />
       <workItem from="1671400958129" duration="53000" />
       <workItem from="1673017156005" duration="5592000" />
-      <workItem from="1673078995556" duration="1765000" />
+      <workItem from="1673078995556" duration="2229000" />
     </task>
     <task id="LOCAL-00001" summary="new App movice">
       <created>1662291866796</created>
@@ -581,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673043070415</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="add logo image and change login, register page">
+      <created>1673081565268</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1673081565268</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -602,7 +603,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="change footer and add logo" />
     <MESSAGE value="change image and add styleing" />
     <MESSAGE value="fix admin page" />
     <MESSAGE value="last change" />
@@ -627,7 +627,8 @@
     <MESSAGE value="delete docker files and fix create movie page" />
     <MESSAGE value="add comment and fix page" />
     <MESSAGE value="add comment and fix page create movie" />
-    <option name="LAST_COMMIT_MESSAGE" value="add comment and fix page create movie" />
+    <MESSAGE value="add logo image and change login, register page" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logo image and change login, register page" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
