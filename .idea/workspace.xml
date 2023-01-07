@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="add image and pdf file to project">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="change README.md file, add db image" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +192,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "R:/reserveDonate-main",
+    "last_opened_file_path": "R:/Programme/laravel9/Movie-Gallery/public/image/readme",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -211,6 +209,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="R:\Programme\laravel9\Movie-Gallery\public\image\readme" />
       <recent name="R:\Programme\laravel9\Movie-Gallery" />
       <recent name="R:\Programme\laravel9\Final_Project\public\image\readme" />
       <recent name="R:\Programme\laravel9\Final_Project\public\image" />
@@ -247,28 +246,7 @@
       <workItem from="1671383049864" duration="5455000" />
       <workItem from="1671400958129" duration="53000" />
       <workItem from="1673017156005" duration="5592000" />
-      <workItem from="1673078995556" duration="3771000" />
-    </task>
-    <task id="LOCAL-00003" summary="add favicon.ico">
-      <created>1662293368285</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1662293368285</updated>
-    </task>
-    <task id="LOCAL-00004" summary="edit file">
-      <created>1662293376053</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1662293376053</updated>
-    </task>
-    <task id="LOCAL-00005" summary="edit file">
-      <created>1662294168667</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1662294168667</updated>
+      <workItem from="1673078995556" duration="4117000" />
     </task>
     <task id="LOCAL-00006" summary="change footer and add logo">
       <created>1662295379236</created>
@@ -592,7 +570,28 @@
       <option name="project" value="LOCAL" />
       <updated>1673083104228</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="change README.md file">
+      <created>1673083315979</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1673083315979</updated>
+    </task>
+    <task id="LOCAL-00053" summary="change README.md file">
+      <created>1673083370374</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1673083370374</updated>
+    </task>
+    <task id="LOCAL-00054" summary="change README.md file, add db image">
+      <created>1673083540088</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1673083540088</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -613,8 +612,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="last change be go to gym" />
-    <MESSAGE value="change files" />
     <MESSAGE value="add files and last change" />
     <MESSAGE value="change README.md file and add sql file" />
     <MESSAGE value="add image and update README.md" />
@@ -638,7 +635,9 @@
     <MESSAGE value="change logo from admin page" />
     <MESSAGE value="fix create movies and other pages created" />
     <MESSAGE value="add image and pdf file to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="add image and pdf file to project" />
+    <MESSAGE value="change README.md file" />
+    <MESSAGE value="change README.md file, add db image" />
+    <option name="LAST_COMMIT_MESSAGE" value="change README.md file, add db image" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
