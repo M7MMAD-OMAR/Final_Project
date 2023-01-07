@@ -28,21 +28,24 @@ Route::get('/casts/{cast:slug}', [CastController::class, 'show'])->name('casts.s
 Route::get('/genre/{genre:slug}', [GenreController::class, 'show'])->name('genres.show');
 
 
-Route::middleware(['auth:sanctum', 'verified', 'role:admin'])->prefix('admin')->name('admin.')->group(function () {
-    Route::get('/', [AdminController::class, 'index'])->name('index');
-    Route::get('movies', MovieIndex::class)->name('movies.index');
-    Route::post('movies', [MovieController::class, 'store'])->name('movie.store');
-    Route::get('series', SerieIndex::class)->name('series.index');
-    Route::post('series', [SerieController::class, 'store'])->name('serie.store');
-    Route::get('series/{serie}/seasons', SeasonIndex::class)->name('seasons.index');
-    Route::get('series/{serie}/seasons/{season}/episodes', EpisodeIndex::class)->name('episodes.index');
-    Route::get('genres', GenreIndex::class)->name('genres.index');
-    Route::post('genres', [GenreController::class, 'store'])->name('genre.store');
+Route::middleware(['auth:sanctum', 'verified', 'role:admin'])->prefix('admin')
+    ->name('admin.')->group(function () {
+
+        Route::get('/', [AdminController::class, 'index'])->name('index');
+        Route::get('movies', MovieIndex::class)->name('movies.index');
+        Route::post('movies', [MovieController::class, 'store'])->name('movie.store');
+        Route::get('series', SerieIndex::class)->name('series.index');
+        Route::post('series', [SerieController::class, 'store'])->name('serie.store');
+        Route::get('series/{serie}/seasons', SeasonIndex::class)->name('seasons.index');
+        Route::get('series/{serie}/seasons/{season}/episodes', EpisodeIndex::class)->name('episodes.index');
+        Route::get('genres', GenreIndex::class)->name('genres.index');
+        Route::post('genres', [GenreController::class, 'store'])->name('genre.store');
     Route::get('casts', CastIndex::class)->name('casts.index');
     Route::post('casts', [CastController::class, 'store'])->name('cast.store');
     Route::get('tags', TagIndex::class)->name('tags.index');
     Route::post('tags', [TagController::class, 'store'])->name('tags.store');
 });
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

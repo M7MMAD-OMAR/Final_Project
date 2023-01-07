@@ -9,11 +9,6 @@
             <p>Password: admin@gmail.com</p>
             <br>
             <hr>
-            <br>
-            <p>User Account:</p>
-            <p>Email: user@gmail.com</p>
-            <p>Password: user@gmail.com</p>
-            <br>
         </div>
         <x-jet-validation-errors class="mb-4"/>
 
@@ -59,7 +54,7 @@
             </div>
         </form>
         <div>
-            <a href="register" class="p-2 bg-gray-900 text-white rounded-lg">Register</a>
+            <a href="/register" class="p-2 bg-gray-900 text-white rounded-lg">Register</a>
         </div>
     </x-jet-authentication-card>
 </x-guest-layout>
