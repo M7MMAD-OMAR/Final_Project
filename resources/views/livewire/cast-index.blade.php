@@ -2,7 +2,7 @@
 
     <form action="{{ route('admin.cast.store') }}" enctype="multipart/form-data" method="POST">
         @csrf
-        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Create Movies</h2>
+        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Create Cast</h2>
         <p class="leading-relaxed mb-5 text-gray-600"></p>
         <div class="relative mb-4">
             <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
@@ -14,7 +14,7 @@
             <label for="poster_path"
                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Upload
                 Image</label>
-            <input id="poster_path" type="file" name="poster_path"
+            <input id="poster_path" type="file" name="poster_path" required
                    class="block w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 cursor-pointer dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400">
             <p class="mt-1 text-sm text-gray-500 dark:text-gray-300">SVG, PNG, JPG or
                 GIF</p>

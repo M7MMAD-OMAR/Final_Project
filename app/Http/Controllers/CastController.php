@@ -22,9 +22,12 @@ class CastController extends Controller
 
     public function store(Request $request)
     {
+        $old_cast_id = Cast::latest('id')->first();
+        $old_cast_id = (int)$old_cast_id->id;
         $image_name = $request->file('poster_path')->getClientOriginalName();
-        $cast = Cast::create([
-//            'tmdb_id' => $newCast['id'],
+
+        Cast::create([
+            'tmdb_id' => ($old_cast_id + 1),
             'name' => $request['name'],
             'slug' => Str::slug($request['name']),
             'poster_path' => $request->file('poster_path')->storeAs('photos_movies', $image_name, 'photo_movie'),
