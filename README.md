@@ -42,10 +42,10 @@ Run in Terminal:
 
 <code>php artisan key:generate</code>
 
-### See That
+### See That 👁️👁️
 
 Within the project,
-there is an image and a PDF file,
+there is an image and a PDF file 🤩,
 including an explanation of the database
 
 #### I Used
