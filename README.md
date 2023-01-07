@@ -32,7 +32,7 @@ Create DataBase
 
 Import file from project
 
-*   movie_app.sql
+* movie_app.sql
 
 <code>php artisan migrate</code>
 
@@ -42,7 +42,14 @@ Run in Terminal:
 
 <code>php artisan key:generate</code>
 
+### See That
+
+Within the project,
+there is an image and a PDF file,
+including an explanation of the database
+
 #### I Used
+
 <hr>
 
     * Laravel
