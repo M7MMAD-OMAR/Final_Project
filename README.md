@@ -74,10 +74,11 @@ including an explanation of the database
 <hr>
 <br>
 
+
 <p>
 <h4>Admin Details view</h4>
 <a href="https://laravel.com" target="_blank">
-<img src="public/image/readme/new2.png" width="95%"></a>
+<img src="public/image/readme/new22.png" width="95%"></a>
 </p>
 
 <hr>
@@ -86,7 +87,7 @@ including an explanation of the database
 <p>
 <h4>User page</h4>
 <a href="https://laravel.com" target="_blank">
-<img src="public/image/readme/new3.png" width="95%"></a>
+<img src="public/image/readme/new33.png" width="95%"></a>
 </p>
 
 
