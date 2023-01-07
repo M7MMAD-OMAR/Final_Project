@@ -67,9 +67,8 @@ including an explanation of the database
 
 
 <p>
-<h4>Admin view</h4>
-<a href="https://laravel.com" target="_blank">
-<img src="public/image/readme/new1.png" width="95%"></a>
+<h4>DataBase Project</h4>
+<img src="public/image/readme/data.jpeg" width="95%">
 </p>
 
 <hr>
