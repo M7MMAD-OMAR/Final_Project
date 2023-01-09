@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="974a653e-1c52-462d-9003-f8857e52411c" name="Changes" comment="fix page and change footer style">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,14 +250,8 @@
       <workItem from="1671400958129" duration="53000" />
       <workItem from="1673017156005" duration="5592000" />
       <workItem from="1673078995556" duration="9898000" />
-      <workItem from="1673090764453" duration="1175000" />
-    </task>
-    <task id="LOCAL-00012" summary="add files and last change">
-      <created>1662326910252</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1662326910252</updated>
+      <workItem from="1673090764453" duration="3615000" />
+      <workItem from="1673274794770" duration="46000" />
     </task>
     <task id="LOCAL-00013" summary="change README.md file and add sql file">
       <created>1662327193980</created>
@@ -594,7 +589,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673089918046</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="fix page and change footer style">
+      <created>1673093944163</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1673093944164</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
